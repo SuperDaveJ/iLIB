@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Multiple Choice - Knowledge Check Questions</title>
+<script language="javascript" type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/content.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript">
+function initializePage() {}
+
+var widthTable = 0;  //table width	
+var nItems = 2;
+var ansCorrect = "A"
+
+distracters = new Array(nItems);
+distracters[0] = "Lorem ipsum dolor sit amet";
+distracters[1] = "Phasellus pretium orci risus";
+
+fdbkIncorrect1 = new Array(nItems);
+fdbkIncorrect1[0] = "";
+fdbkIncorrect1[1] = "<p><strong>Incorrect.</strong></p> <p>The answer is A.</p> <p>Please try again.</p>";
+ 
+fdbkCorrect = "<p><strong>Correct!</strong></p> <p>The answer is A.</p>"
+
+fdbkFinalIncorrect  = "<p><strong>Incorrect.</strong></p> <p>The answer is A.</p>"
+</script>
+
+<script type="text/javascript" src="js/MC.js"></script>
+</head>
+
+<body>
+
+<div class="content_container">
+    <div class="alignLeft">
+      <div class="bg_box">
+      <div class="header">
+  <h3 class="content_title">Knowledge Check Question</h3>
+      </div>
+<div id="inner_bg">
+
+
+
+	<div id="question"><p><strong>Which one of the following answer is C?  Select the correct answer, and then click Submit.</strong></p>
+		<form name="qForm" id="qForm"></form>
+	</div>
+
+	<div class="submit">
+		<a href='javascript:judgeInteraction()'><img src="assets/submit.png" id="submit" border="0" title="Submit" alt="Submit"></a>
+	</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

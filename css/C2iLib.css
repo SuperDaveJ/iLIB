@@ -1,0 +1,528 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: none;
+}
+#menu-icon, 
+.v-bars-1, 
+#drop-menu,
+.sec-divider {
+	display: none;
+}
+
+body {
+	background: #fff url(../sysimages/mainBG.jpg) top center no-repeat;
+	min-width: 987px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: #000;
+}
+
+#wraper-inner {
+	position: relative;
+	width: 987px;
+	height: auto;
+	min-height: 600px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+#top-container {
+	position: relative;
+	width: 987px;
+	height: 225px;
+	margin: 0 auto;
+}
+
+/***** header block starts here *****/
+header {
+	background: url(../sysimages/header/header.png) top center no-repeat;
+	position: relative;
+	width: 987px;
+	height: 144px;
+}
+#logo {
+	position: absolute;
+	width: 212px;
+	height: 52px;
+	top: 25px;
+	left: 100px;
+}
+h1 {
+	position: absolute;
+	width: 352px;
+	height: 25px;
+	line-height: 20px;
+	top: 10px;
+	right: 100px;
+}
+#contact {
+	position: absolute;
+	top: 75px;
+	left: 670px;
+	width: 60px;
+	height: 29px;
+}
+#about {
+	position: absolute;
+	top: 75px;
+	left: 740px;
+	width: 60px;
+	height: 29px;
+}
+
+/* .top-bar-2 contains HOME, FLASH, HTML, and OTHERS */
+header .top-bar-2 {
+	position: relative;
+	background: #000 url(../sysimages/header/header-lower-1px.jpg) top center repeat-x;
+	top: 107px;
+	width: 280px;
+	height: 36px;
+	margin: 0 auto;
+}
+
+.top-bar-2 a {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 34px;
+	width: 100%;
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #888;
+}
+.top-bar-2 a:link {
+	color: #888;
+}
+.top-bar-2 a:hover {
+	color: #68cecf;
+}
+.top-bar-2 a:active {
+	color: #fff;
+}
+#faq {
+	position: absolute;
+	top: 75px;
+	left: 800px;
+	width: 60px;
+	height: 29px;
+}
+
+.v-bars-2 {
+	position: absolute;
+	top: 3px;
+	display: block;
+	z-index: 99;
+}
+#v-bar-3 {
+	left: 72px;
+}
+#v-bar-4 {
+	left: 132px;
+}
+#v-bar-5 {
+	left: 192px;
+}
+
+#left-arrow {
+	position: absolute;
+	background: url(../sysimages/header/left-arrow.jpg) 0px 7px no-repeat;
+	left: 1px;
+	top: 0px;
+	width: 12px;
+	height: 35px
+}
+#home {
+	position: absolute;
+	top: 0px;
+	left: 12px;
+	width: 60px;
+	height: 35px;
+	text-align: center;
+}
+#html {
+	position: absolute;
+	top: 0px;
+	left: 73px;
+	width: 60px;
+	height: 35px;
+	text-align: center;
+}
+
+#flash {
+	position: absolute;
+	top: 0px;
+	left: 132px;
+	width: 60px;
+	height: 35px;
+	text-align: center;
+}
+
+#others {
+	position: absolute;
+	top: 0px;
+	left: 192px;
+	width: 76px;
+	height: 35px;
+	text-align: center;
+}
+
+#right-arrow {
+	position: absolute;
+	background: url(../sysimages/header/right-arrow.jpg) 0px 7px no-repeat;
+	left: 268px;
+	top: 0px;
+	width: 12px;
+	height: 35px;
+}
+
+/***** nav buttons block starts here *****/
+nav#top-bar.html, nav#top-bar.flash {
+	background: #68cecf url(../sysimages/content/pageNav.png) top center no-repeat;
+	position: relative;
+	width: 722px;
+	height: 81px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: block;
+}
+nav .nav-button {
+	position: absolute;
+	top: 0px;
+	width: 95px;
+	height: 81px;
+}
+nav #dnd {
+	left: 4px;
+}
+nav #kc {
+	left: 106px;
+}
+nav #pop {
+	left: 209px;
+}
+nav #ddm {
+	left: 313px;
+}
+nav #slider {
+	left: 417px;
+}
+nav #graf {
+	left: 520px;
+}
+nav #av {
+	left: 623px;
+}
+
+/* for OTHERS page */
+nav#top-bar.others {
+	position: relative;
+	width: 400px;
+	height: 81px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: block;
+}
+nav .nav-button-others {
+	position: absolute;
+	background: #68cecf;
+	top: 0px;
+	width: 100px;
+	height: 81px;
+	text-align: center;
+}
+.nav-button-others a {
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	line-height: 80px;
+	color: #555;
+	display: block;
+}
+.nav-button-others a:hover {
+	background-color: #3465A8;
+	color: #fff;
+}
+nav #lec {
+	left: 0px;
+	border-right: 1px dotted #999;
+	border-bottom-left-radius: 5px;
+}
+nav #cap {
+	left: 100px;
+	border-right: 1px dotted #999;
+}
+nav #sto {
+	left: 200px;
+	border-right: 1px dotted #999;
+}
+nav #ppt {
+	left: 300px;
+	border-bottom-right-radius: 5px;
+}
+
+/***** Main section starts here *****/
+div#main {
+	/* IE does not support main tag */
+	position: relative;
+	top: 5px;
+	width: 798px;
+	height: auto;
+	margin: 0 auto;
+	/*overflow: auto;*/
+}
+
+section {
+	position: relative;
+	width: 798px;
+	min-height: 380px;
+	height: auto;
+	margin: 0;
+	padding: 15px 0 10px;
+}
+/* clearfix */
+section:before,
+section:after {
+  content:"";
+  display:table;
+}
+section:after {
+  clear:both;
+}
+section {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+section .sec-title {
+	background: url(../sysimages/content/page_title.png);
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 798px;
+	height: 111px;
+}
+.sec-title>#title-dnd {
+	position: absolute;
+	left: 35px;
+	top: 23px;
+}
+.sec-title>#title-kc {
+	position: absolute;
+	left: 10px;
+	top: 26px;
+}
+.sec-title>#title-pop {
+	position: absolute;
+	left: 42px;
+	top: 33px;
+}
+/* dropdown menu */
+.sec-title>#title-ddm {
+	position: absolute;
+	left: 35px;
+	top: 20px;
+}
+/* content slider */
+.sec-title>#title-cs {
+	position: absolute;
+	left: 33px;
+	top: 25px;
+}
+/* selectable graphics */
+.sec-title>#title-sg {
+	position: absolute;
+	left: 8px;
+	top: 25px;
+}
+/* audio / video */
+.sec-title>#title-av {
+	position: absolute;
+	left: 10px;
+	top: 40px;
+}
+/* show me / try me */
+.sec-title>#title-st {
+	position: absolute;
+	left: 30px;
+	top: 23px;
+}
+/* slides show */
+.sec-title>#title-ss {
+	position: absolute;
+	left: 23px;
+	top: 40px;
+}
+/* timeline */
+.sec-title>#title-time {
+	position: absolute;
+	left: 37px;
+	top: 40px;
+}
+/* animation with audio */
+.sec-title>#title-aa {
+	position: absolute;
+	left: 23px;
+	top: 28px;
+}
+/* flash-effects */
+.sec-title>#title-fe {
+	position: absolute;
+	left: 23px;
+	top: 28px;
+}
+/* flash-games */
+.sec-title>#title-fg {
+	position: absolute;
+	left: 23px;
+	top: 28px;
+}
+
+.sec-title>.description {
+	position: absolute;
+	left: 259px;
+	top: 6px;
+	width: 512px;
+	height: 100px;
+	overflow: auto;
+	font-size: 1.25em;
+	color: #fff;
+	padding: 0 10px;
+	display: table;
+	box-sizing: border-box;
+}
+.sec-title>.description .text {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/***** interaction boxes start here *****/
+.int-box-row {
+	position: relative;
+	padding-left: 25px;
+}
+.int-box {
+	background: url(../sysimages/content/content_box.png);
+	position: relative;
+	width: 237px;
+	height: 273px;
+	margin: 10px 7px 5px;
+	float: left;
+}
+/*
+.int-box-1 {
+	background: url(../sysimages/content/content_box.png);
+	position: relative;
+	width: 237px;
+	height: 273px;
+	margin: 10px 7px 5px 258px;
+	float: left;
+}
+.int-box-2 {
+	background: url(../sysimages/content/content_box.png);
+	position: relative;
+	width: 237px;
+	height: 273px;
+	margin: 10px 7px 5px 132px;
+	float: left;
+}
+*/
+
+.int-img {
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	width: 221px;
+	height: 177px;
+	opacity: 0.6;
+}
+.int-description {
+	position: relative;
+	padding: 0 20px;
+	font-size: 14px;
+	color: #000;
+	width: 237px;
+	height: 186px;
+	display: table;
+	box-sizing: border-box;
+}
+.int-description>.text {
+	display: table-cell;
+	vertical-align: middle;
+}
+.int-title {
+	position: absolute;
+	width: 237px;
+	height: 33px;
+	bottom: 55px;
+	padding: 0 10px;
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
+	color: #fff;
+	display: table;
+	box-sizing: border-box;
+}
+.int-title>.text {
+	display: table-cell;
+	vertical-align: middle;
+}
+.download {
+	position: absolute;
+	left: 16px;
+	bottom: 21px;
+	width: 94px;
+	height: 22px;
+}
+.demo {
+	position: absolute;
+	right: 17px;
+	bottom: 21px;
+	width: 94px;
+	height: 22px;
+}
+
+/***** footer starts here *****/
+#footer-wrapper {
+	background: url(../sysimages/footer/1pxFooter.png) bottom center repeat-x;
+	position: relative;
+	width: 100%;
+	height: 165px;
+	margin: 20px auto 0;
+}
+
+footer {
+	background: url(../sysimages/footer/footer_mid.png) top center no-repeat;
+	position: relative;
+	width: 800px;
+	height: 165px;
+	margin: 0 auto;
+}
+footer #tw {
+	position: absolute;
+	left: 216px;
+	bottom: 0px;
+	width: 30px;
+	height: 35px;
+}
+footer #fb {
+	position: absolute;
+	left: 335px;
+	bottom: 0px;
+	width: 30px;
+	height: 37px;
+}
+footer #lnkn {
+	position: absolute;
+	left: 497px;
+	bottom: 0px;
+	width: 30px;
+	height: 37px;
+}
+
+p {
+	padding: 10px 0 0 10px;
+}

@@ -1,0 +1,151 @@
+<html>
+<head><title>Loading...</title></head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" >
+  function selectGroup(){
+		parent.group = $( "#group" ).prop("selectedIndex");
+		if (parent.group == 2) 
+		{
+			parent.group = parent.getRandom(2);
+		}
+		//parent.group = $( "#group option:selected" ).text();
+		parent.blnRandom = $( "#rand option:selected" ).text();	
+		parent.nQs = $( "#num option:selected" ).text();
+		parent.allowTime = $( "#hrs option:selected" ).val()*60*60 + $( "#mins option:selected" ).val()*60;
+		parent.gtriesLimit = $( "#fdbktimes option:selected" ).val();
+		parent.a_review =  $( "#a_review option:selected" ).text() == "Yes" ? true: false;
+
+		parent.setGroupData();
+		parent.startCourse();
+	}
+	
+	function set_time() {
+		if ($( "#time option:selected" ).text() == "No") {
+			//alert()
+			$("#hrs").attr("disabled","disabled");
+			$("#mins").attr("disabled","disabled");
+			$("#hrs").prop("selectedIndex",0);
+			$("#mins").prop("selectedIndex",0);
+		} else {
+			$( "#hrs").prop('disabled', false);
+			$( "#mins").prop('disabled', false);
+		}
+	}
+	
+	function set_fdbk() {
+		if ($( "#fdbk option:selected" ).text() == "No") {
+			//alert()
+			$("#fdbktimes").attr("disabled","disabled");
+			$("#fdbktimes").prop("selectedIndex",0);
+		} else {
+			$( "#fdbk").prop('disabled', false);
+			$( "#fdbktimes").prop('disabled', false);
+		}
+	}
+	
+//$("#group").on("change", function() {
+//  alert( ); // or $(this).val()
+//  //prop('disabled', false);
+//});
+	function set_rend() {
+		if ($( "#group option:selected" ).text() == "1 or 2") {
+			//alert()
+			$("#rand option:contains('No')").attr("disabled","disabled");
+			$("#rand").prop("selectedIndex",0);
+		} else $( "#rand option:contains('No')").prop('disabled', false);
+	}
+
+</script>
+<body>
+<div class="content_container">
+    <div class="alignLeft">
+      <div class="bg_box">
+      <div class="header">
+  <h3 class="content_title">XML Driven KC</h3>
+      </div>
+<div id="inner_bg">
+
+<p align="center"><strong>XML Assessment </strong></p>
+<p>All questions are in external <a href="assessment_data.xml" target="_blank">.xml file</a>. There are two groups' knowledge check questions in this example. You may choose one of the following combinations.</p>
+<form style="padding-left:100px">
+<p><label for="group">Group:</label>
+  <select name="group" id="group" onchange="javascript:set_rend()">
+    <option selected>1</option>
+    <option>2</option>
+    <option>1 or 2</option>
+  </select>
+  </p>
+<p><label for="num">Question Numbers:</label>
+  <select name="num" id="num">
+    <option>10</option>
+    <option>20</option>
+    <option>30</option>
+    <option>40</option>
+    <option>50</option>
+    <option>60</option>
+    <option>70</option>
+    <option>80</option>
+    <option>90</option>
+    <option>all</option>
+  </select></p>
+<p>
+  <label for="rand">    
+    Randomizing:</label>
+  <select name="rand" id="rand">
+    <option>Yes</option>
+    <option>No</option>
+  </select>
+</p>
+<p>Required completion time 
+  <select name="time" id="time" onchange="javascript:set_time()">
+<option selected>No</option>
+<option>Yes</option>
+  </select> 
+  hours
+  <select name="hrs" disabled id="hrs">
+    <option>0</option>
+    <option>1</option>
+    <option>2</option>
+  </select>
+  minutes
+  <select name="mins" disabled id="mins">
+    <option selected>0</option>
+    <option>1</option>
+    <option>5</option>
+    <option>10</option>
+    <option>20</option>
+    <option>30</option>
+    <option>40</option>
+    <option>50</option>
+  </select>
+</p>
+<p>Show Feedback 
+  <select name="fdbk" id="fdbk" onchange="javascript:set_fdbk()">
+    <option selected>No</option>
+    <option>Yes</option>
+  </select>
+  Times
+  <select name="fdbktimes" disabled id="fdbktimes">
+    <option selected>0</option>
+    <option>1</option>
+    <option>2</option>
+  </select>
+</p>
+<p>Allow to Review 
+  <select name="a_review" id="a_review">
+    <option>Yes</option>
+    <option>No</option>
+  </select>
+</p>
+<p align="center">
+  <input onClick="javascript: selectGroup()" type="button" name="button" id="button" value="Start">
+</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

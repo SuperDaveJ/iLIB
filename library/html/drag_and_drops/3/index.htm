@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Drag and Drop - 10 to 9 match in 3 areas with Done button (for all browsers)</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+<script type="text/javascript" src="js/wz_dragdrop.js"></script>
+<script type="text/javascript" src="js/DD_BuildList_nTargetAreas.js"></script>
+
+<div class="content_container">
+      <div class="bg_box">
+      <div class="header">
+  <h3 class="content_title">Knowledge Check Question</h3>
+      </div>
+   <div id="inner_bg">
+  Drag the buttons from the left to the proper areas on the right. Select Done when you are completed.<br /> 
+  (Correct answer hint: <br />first 3 buttons go to the middle box on the right.
+   <br />last 3 buttons go to the top box on the right.
+   <br />the rest go to the bottom box on the right.)
+  
+  
+<div id="targetHolder" style="position: absolute; top: 139px; left: 400px; height: 400px; width: 320px;">
+  <!-- Target area -->
+  <div id="target_area1" style="position: absolute; top: 9px; left: 0px; height: 120px; width: 320px; background-color: #A7CDEC; border: 1px solid; bottom: -1px;"></div>
+  <div id="target_area2" style="position: absolute; top: 141px; left: 0px; height: 120px; width: 320px; background-color: #6AA0C8; border: 1px solid;"></div>
+  <div id="target_area3" style="position: absolute; top: 274px; left: 0px; height: 120px; width: 320px; background-color: #3974A0; border: 1px solid;"></div>
+</div>
+
+<!-- drag objects -->
+<div id="dragHolder" style="position: relative; top: 15px; left: 40px; width: 360px; height: 370px; z-index: 4">
+
+	<div id="drag_b1" style="position:absolute; top:2px; left:0px; width:221px; height:29px;"><img id="img4" name="img4" src="assets/drag_4.jpg" alt="A graphic that depicts Take Proactive Action component of the SLIM Framework." /></div>
+
+	<div id="drag_b2" style="position:absolute; top:41px; left:0px; width:221px; height:29px;"><img id="img2" name="img2" src="assets/drag_2.jpg" alt="A graphic that depicts the Monitor the System component of the SLIM Framework." /></div>
+
+	<div id="drag_b3" style="position:absolute; top:79px; left:0px; width:221px; height:29px;"><img id="img3" name="img3" src="assets/drag_3.jpg" alt="A graphic that depicts the Assess System Performance component of the SLIM Framework." /></div>
+    
+	<div id="drag_c1" style="position:absolute; top:116px; left:0px; width:221px; height:29px;"><img id="img1" name="img1" src="assets/drag_1.jpg" alt="A graphic that depicts the Provide Analysis Feedback component of the SLIM Framework." /></div>
+
+	<div id="drag_c2" style="position:absolute; top:154px; left:0px; width:221px; height:29px;"><img id="img5" name="img5" src="assets/drag_5.jpg" alt="A graphic that depicts Take Proactive Action component of the SLIM Framework." /></div>
+    
+	<div id="drag_c3" style="position:absolute; top:191px; left:0px; width:221px; height:29px;"><img id="img6" name="img6" src="assets/drag_6.jpg" alt="A graphic that depicts Take Proactive Action component of the SLIM Framework." /></div>
+    
+	<div id="drag_a1" style="position:absolute; top:230px; left:0px; width:221px; height:29px;"><img id="img7" name="img7" src="assets/drag_7.jpg" alt="A graphic that depicts Take Proactive Action component of the SLIM Framework." /></div>
+    
+	<div id="drag_a2" style="position:absolute; top:267px; left:0px; width:221px; height:29px;"><img id="img8" name="img8" src="assets/drag_8.jpg" alt="A graphic that depicts Take Proactive Action component of the SLIM Framework." /></div>
+    
+	<div id="drag_a3" style="position:absolute; top:307px; left:0px; width:221px; height:29px;"><img id="img9" name="img9" src="assets/drag_9.jpg" alt="A graphic that depicts Take Proactive Action component of the SLIM Framework." /></div>
+
+<!-- objects that will stay: drag_si. s for stay. The code works fine if there is no object that will stays -->
+<!--        
+	<div id="drag_s1" style="position:absolute; top:340px; left:0px; width:328px; height:48px;"><img id="img10" name="img10" src="assets/61090_a.png" alt="A graphic that depicts Take Proactive Action component of the SLIM Framework." /></div>
+-->        
+</div>
+ 
+<div id="done" style="position: absolute; text-align: center; left: 78px; top: 508px; z-index: 2; width: 96px; height: 41px;"><a href="javascript:judgeInteraction();" onmouseover="javascript:document.getElementById('btnDone').src='assets/done_2.png';" onmouseout="javascript:document.getElementById('btnDone').src='assets/done_0.png';" ><img src="assets/done_0.png" alt="Done button" id="btnDone" name="btnDone" width="197" height="42" border="0"></a></div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+<!--
+SET_DHTML("DnDHolder"+NO_DRAG,"targetHolder"+NO_DRAG,"target_area1"+NO_DRAG,"target_area2"+NO_DRAG,"target_area3"+NO_DRAG,"dragHolder"+NO_DRAG,"drag_a1"+CURSOR_HAND+MAXOFFLEFT+20+MAXOFFRIGHT+600+MAXOFFTOP+280+MAXOFFBOTTOM+400,"drag_a2"+CURSOR_HAND+MAXOFFLEFT+20+MAXOFFRIGHT+660+MAXOFFTOP+270+MAXOFFBOTTOM+500,"drag_a3"+CURSOR_HAND+MAXOFFLEFT+20+MAXOFFRIGHT+600+MAXOFFTOP+370+MAXOFFBOTTOM+400,"drag_b1"+CURSOR_HAND+MAXOFFLEFT+20+MAXOFFRIGHT+600+MAXOFFTOP+360+MAXOFFBOTTOM+500,"drag_b2"+CURSOR_HAND+MAXOFFLEFT+20+MAXOFFRIGHT+600+MAXOFFTOP+360+MAXOFFBOTTOM+500,"drag_b3"+CURSOR_HAND+MAXOFFLEFT+20+MAXOFFRIGHT+600+MAXOFFTOP+360+MAXOFFBOTTOM+500,"drag_c1"+CURSOR_HAND+MAXOFFLEFT+20+MAXOFFRIGHT+600+MAXOFFTOP+360+MAXOFFBOTTOM+500,"drag_c2"+CURSOR_HAND+MAXOFFLEFT+20+MAXOFFRIGHT+600+MAXOFFTOP+360+MAXOFFBOTTOM+500,"drag_c3"+CURSOR_HAND+MAXOFFLEFT+20+MAXOFFRIGHT+600+MAXOFFTOP+360+MAXOFFBOTTOM+500,"drag_s1"+CURSOR_HAND+MAXOFFLEFT+20+MAXOFFRIGHT+650+MAXOFFTOP+360+MAXOFFBOTTOM+500);
+//NOTE: Set layers to draggable for this exercise does NOT work. 
+//		All draggable layers must be held in another layer like dragHolder in this example.
+
+var nObj = 10;
+var nCorrect_a = 3;
+var nCorrect_b = 3;
+var nCorrect_c = 3;
+nCorrect = nCorrect_a + nCorrect_b + nCorrect_c;
+var uCorrect = 0;
+var TriesUser = 0;
+var TriesLimit = 2;
+
+var fdbkCorrect, fdbkIncorrect0, fdbkIncorrect1, fdbkIncorrect2;
+fdbkCorrect = "<p style='font-weight:bold'>Good job!</p>  <p>You got them all correct.</p> <p>Select NEXT to continue.</p>";
+
+fdbkIncorrect0 = "<p>You have not made any selections. Please try again.</p>";
+
+fdbkIncorrect1 = "<p>Incorrect.</p> <p>One or more of your answers is incorrect.</p> <p>Please try again.</p>";
+
+fdbkIncorrect2 = "<p>Incorrect.</p>  <p>The correct answers are identified.</p>  <p>Select NEXT to continue.</p>";
+
+/*During judge, if drag_i matches targeti that pair is correct.  Targets are in sequential order. 
+  That means draggable objects are not in sequential order. first nCorrect targets are listed, others are blank.
+*/
+arrCorrect_a = new Array('drag_a1','drag_a2','drag_a3');		//correct for target area 1
+arrCorrect_b = new Array('drag_b1','drag_b2','drag_b3');		//correct for target area 2
+arrCorrect_c = new Array('drag_c1','drag_c2','drag_c3');		//correct for target area 3
+
+arrUser_a = new Array(nCorrect_a);
+for (var i=0; i<nCorrect_a; i++) arrUser_a[i] = ""
+arrUser_b = new Array(nCorrect_b);
+for (var i=0; i<nCorrect_b; i++) arrUser_b[i] = ""
+arrUser_c = new Array(nCorrect_c);
+for (var i=0; i<nCorrect_c; i++) arrUser_c[i] = ""
+
+//CP=CorrectPosition. correct positiona are offset from their hoders: target_area1, target_area2, etc.
+//in this example, first 3 are for target_area1, second 3 are for target_area2, and the last 3 are for target_area3.
+arrCP = new Array([50,10],[50,45],[50,80],[50,10],[50,45],[50,80],[50,10],[50,45],[50,80]);
+
+//-->
+</script>
+
+</body>
+</html>

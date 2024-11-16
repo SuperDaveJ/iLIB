@@ -1,0 +1,129 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	background: url(../assets/mainBG.jpg);
+}
+
+#inner_bg {
+	/*border: 1px solid #92b901;*/
+	background-color: #fff;
+	padding:20px;
+	padding-bottom:60px;
+	border: 1px solid #4381A0;
+}
+
+
+
+.content_container {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 2.5% 2% 2.5% 2.6%;
+	width: 95%;
+	height:430px; 
+}
+
+
+
+.bg_box{width:98%; padding:1%;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;border:1px solid #b2b2b2;background-color:#F6F6F6;-webkit-box-shadow: #CFCFCF 5px 5px 5px;-moz-box-shadow: #CFCFCF 5px 5px 5px; box-shadow: #CFCFCF 5px 5px 5px;}
+
+.content_title {
+	color: #F5F0F0;
+	margin:5px;
+}
+
+.header{
+	display:block;
+	width:33%;
+	background-color:#204F70;
+	border:1px solid #204F70;
+	padding-left:1%;
+	border-top-right-radius: 30px;
+}
+h3 {
+    margin: 0;
+    padding: 7px 0 0 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+div#feature_list {
+    width: 750px;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+}
+div#feature_list ul {
+    position: absolute;
+    top: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul#tabs {
+    left: 0;
+    z-index: 2;
+    width: 320px;
+}
+ul#tabs li {
+    font-size: 12px;
+    font-family: Arial;
+}
+ul#tabs li img {
+    padding: 5px;
+    border: none;
+    float: left;
+    margin: 10px 10px 0 0;
+}
+ul#tabs li a {
+    color: #222;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    height: 60px;
+    outline: none;
+}
+ul#tabs li a:hover {
+	background: url('../assets/feature-tab-current.png');
+	color: #FFF;
+}
+ul#output {
+    right: 0;
+    width: 463px;
+    height: 240px;
+    position: relative;
+}
+ul#output li {
+    position: absolute;
+    width: 463px;
+    height: 240px;
+}
+ul#output li a {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 11px;
+    color: #FFF;
+    background: #000;
+    -moz-border-radius: 5px;
+}
+
+#submit {
+	position:relative;
+	bottom: 5px;
+
+	text-align: center;
+	z-index: 11;
+}
+
+#pageN {
+	position: absolute;
+	right: 24px;
+	top: 58px;
+}
+.PageT {
+	font-size: 18px;
+	font-weight: bold;
+}
+

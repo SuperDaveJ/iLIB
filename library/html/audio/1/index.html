@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jPlayer Audio - HTML</title>
+<script language="javascript" type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/content.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jplayer.css">
+
+<script>
+	audioFile = "10000";
+</script>
+
+</head>
+<body>
+<div class="content_container">
+    	<div class="bg_box">
+      		<div class="header">
+  				<h3 class="content_title">MP3 Audio Control</h3>
+      		</div>
+			<div id="inner_bg">
+	<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+	<div id="jp_container_1" class="jp-audio">
+		<div class="jp-type-single">
+			<div class="jp-gui jp-interface">
+				<ul class="jp-controls">
+					<li class="audio"><a href="javascript:;" class="jp-play" tabindex="1" title="Play">play</a></li>
+					<li class="audio"><a href="javascript:;" class="jp-pause" tabindex="1" title="Pause">pause</a></li>
+					<li class="audio"><a href="javascript:;" class="jp-stop" tabindex="1" title="Stop">stop</a></li>
+					<li class="audio"><a href="javascript:;" class="jp-mute" tabindex="1" title="Mute">mute</a></li>
+					<li class="audio"><a href="javascript:;" class="jp-unmute" tabindex="1" title="Unmute">unmute</a></li>
+				</ul>
+
+				<div class="jp-progress">
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+
+				<div class="jp-time-holder">
+					<div class="jp-current-time"></div>
+					<div class="jp-duration"></div>
+				</div>
+			</div>
+
+			<div class="jp-no-solution">
+				<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+			</div>
+		</div>
+	</div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

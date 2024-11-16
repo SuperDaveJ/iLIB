@@ -1,0 +1,283 @@
+/*
+ * Skin for jPlayer Plugin (jQuery JavaScript Library)
+ * http://www.happyworm.com/jquery/jplayer
+ *
+ * Skin Name: Blue Monday
+ *
+ * Copyright (c) 2010-2011 Happyworm Ltd
+ * Dual licensed under the MIT and GPL licenses.
+ *  - http://www.opensource.org/licenses/mit-license.php
+ *  - http://www.gnu.org/copyleft/gpl.html
+ *
+ * Author: Silvia Benvenuti
+ * Skin Version: 4.0 (jPlayer 2.1.0)
+ * Date: 1st September 2011
+ *
+ * Modified by XZ - C2 Technologies, Inc. for FAA course use, Oct. 2012.
+ */
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	background: url(../assets/mainBG.jpg);
+
+}
+
+#inner_bg {
+	/*border: 1px solid #92b901;*/
+	background-color: #fff;
+	padding:20px;
+	border: 1px solid #4381A0;
+	height:400px;
+}
+
+
+
+.content_container {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 2.5% 2% 2.5% 2.6%;
+	width: 790px;
+	height:400px; 
+}
+
+
+
+.bg_box{width:100%; padding:1%;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;border:1px solid #b2b2b2;background-color:#F6F6F6;-webkit-box-shadow: #CFCFCF 5px 5px 5px;-moz-box-shadow: #CFCFCF 5px 5px 5px; box-shadow: #CFCFCF 5px 5px 5px;}
+
+.content_title {
+	color: #F5F0F0;
+	margin:6px;
+	
+}
+
+.header{
+	display:block;
+	width:33%;
+	background-color:#204F70;
+	border:1px solid #204F70;
+	padding-left:2%;
+	border-top-right-radius: 30px;
+}
+
+div.jp-audio {
+
+	/* Edit the font-size to counteract inherited font sizing.
+	 * Eg. 1.25em = 1 / 0.8em
+	 */
+
+	font-size:1em; /* 1.25em for testing in site pages */
+
+	font-family:Verdana, Arial, sans-serif;
+	line-height:1.6;
+	color: #666;
+	border:none;
+	/*background-color:#eee;*/
+
+	position:relative;
+	
+}
+div.jp-audio {
+	width:215px;
+	padding:180px 250px;
+}
+
+div.jp-interface {
+	position: relative;
+	/*background-color:#eee;*/
+	background: #eee;
+	width:100%;
+	border:1px solid  #3B3B3B;
+}
+
+div.jp-audio div.jp-type-single div.jp-interface {
+	height:32px;
+}
+div.jp-audio div.jp-type-playlist div.jp-interface {
+	height:80px;
+}
+
+div.jp-video div.jp-interface {
+	border-top:1px solid #009be3;
+}
+
+/* @group CONTROLS */
+
+div.jp-controls-holder {
+	clear: both;
+	width:440px;
+	margin:0 auto;
+	position: relative;
+	overflow:hidden;
+	top:-8px; /* This negative value depends on the size of the text in jp-currentTime and jp-duration */
+}
+
+div.jp-interface ul.jp-controls {
+	list-style-type:none;
+	margin:0;
+	padding: 0;
+	overflow:hidden;
+}
+
+div.jp-audio ul.jp-controls {
+	width: 215px;
+	padding:3px 6px 0 6px;
+}
+
+.jp-controls, div.jp-interface ul.jp-controls li {
+	display:inline;
+	float: left;
+}
+
+div.jp-interface ul.jp-controls a {
+	display:block;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+a.jp-play,
+a.jp-pause,
+a.jp-stop {
+	width:26px;
+	height:26px;
+}
+
+a.jp-play {
+	background: url("../assets/play.png");
+}
+a.jp-play:hover {
+	background: url("../assets/play.png");
+}
+a.jp-pause {
+	background: url("../assets/pause.png");
+	display: none;
+}
+a.jp-pause:hover {
+	background: url("../assets/pause.png");
+}
+
+a.jp-stop {
+	background: url("../assets/stop.png");
+	margin-left:10px;
+}
+
+a.jp-stop:hover {
+	background: url("../assets/stop.png");
+}
+
+/* @end */
+
+/* @group progress bar */
+
+div.jp-progress {
+	overflow:hidden;
+	background-color: #fff;
+}
+div.jp-audio div.jp-progress {
+	position: absolute;
+	top:6px;
+	height:12px;
+}
+div.jp-audio div.jp-type-single div.jp-progress {
+	left:79px;
+	width:100px;
+	background: #fff;
+}
+
+div.jp-seek-bar {
+	/* background: url("jplayer.blue.monday.jpg") 0 -202px repeat-x; */
+	/* background changed to white */
+	background-color: #fff;
+	width:0px;
+	height:100%;
+	cursor: pointer;
+}
+div.jp-play-bar {
+	background: url("../assets/jplayer.blue.monday.jpg") 0 -218px repeat-x ;
+	width:0px;
+	height:100%;
+}
+
+/* The seeking class is added/removed inside jPlayer */
+div.jp-seeking-bg {
+	background: url("../assets/jplayer.blue.monday.seeking.gif");
+}
+/* @end */
+
+/* @group volume controls */
+
+
+a.jp-unmute {
+	width:11px;
+	height:14px;
+	margin-top:8px;
+}
+a.jp-mute {
+	width:17px;
+	height:18px;
+	margin-top:6px;
+}
+a.jp-volume-max  {
+	width:17px;
+	height:18px;
+	margin-top:6px;
+}
+
+div.jp-audio div.jp-type-single a.jp-mute,
+div.jp-audio div.jp-type-single a.jp-unmute {
+	margin-left: 124px;	
+}
+
+div.jp-audio a.jp-volume-max {
+	margin-left: 56px;	
+}
+
+a.jp-mute {
+	background: url("../assets/audio_on.png");
+}
+a.jp-mute:hover {
+	background: url("../assets/audio_on.png");
+}
+a.jp-unmute {
+	background: url("../assets/audio_off.png");
+	display: none;
+}
+a.jp-unmute:hover {
+	background: url("../assets/audio_off.png");
+}
+
+div.jp-audio div.jp-time-holder {
+	position:absolute;
+	top:18px;
+}
+div.jp-audio div.jp-type-single div.jp-time-holder {
+	left:76px;
+	width:100px;
+}
+div.jp-audio div.jp-type-playlist div.jp-time-holder {
+	left:166px;
+	width:130px;
+}
+
+div.jp-current-time,
+div.jp-duration {
+	width:50px;
+	font-family:"Courier New", Courier, monospace;
+	font-size:9px;
+	color:#1d4b6c;
+}
+div.jp-current-time {
+	float: left;
+	display:inline;
+}
+div.jp-duration {
+	float: right;
+	display:inline;
+	text-align: right;
+}
+
+div.jp-video div.jp-current-time {
+	margin-left:20px;
+}
+div.jp-video div.jp-duration {
+	margin-right:20px;
+}

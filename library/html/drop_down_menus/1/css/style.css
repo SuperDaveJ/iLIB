@@ -1,0 +1,69 @@
+* 											{ margin: 0; padding: 0; }
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	background: url(../img/mainBG.jpg);
+}
+
+#inner_bg {
+	/*border: 1px solid #92b901;*/
+	background-color: #fff;
+	padding:20px;
+	padding-bottom:60px;
+	border: 1px solid #4381A0;
+}
+
+
+
+.content_container {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 2.5% 2% 2.5% 2.6%;
+	width: 95%;
+	height:430px; 
+}
+
+
+
+.bg_box{width:98%; padding:1%;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;border:1px solid #b2b2b2;background-color:#F6F6F6;-webkit-box-shadow: #CFCFCF 5px 5px 5px;-moz-box-shadow: #CFCFCF 5px 5px 5px; box-shadow: #CFCFCF 5px 5px 5px;}
+
+.content_title {
+	color: #F5F0F0;
+	margin:6px;
+}
+
+.header{
+	display:block;
+	width:33%;
+	background-color:#204F70;
+	border:1px solid #204F70;
+	padding-left:1%;
+	border-top-right-radius: 30px;
+}
+
+#page-wrap						{ width: 800px; margin: 25px auto; }
+a											{ text-decoration: none; }
+ul											{ list-style: none; }
+p                                   		{ margin: 15px 0; }
+
+/* LEVEL ONE */
+ul.dropdown                        { position: relative; }
+ul.dropdown li                      { float: left; zoom: 1;  background:url('../img/top_bar1px.jpg') repeat-x; }
+ul.dropdown a:hover		    { color: #000; }
+ul.dropdown a:active           { color: #ffa500; }
+ul.dropdown li a                   { display: block; padding: 4px 8px; color: #FFF; }
+ul.dropdown li:last-child a    { border-right: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover            { background: #86D0F7; color: black; position: relative; }
+ul.dropdown li.hover a         { color: black; }
+
+/* LEVEL TWO */
+ul.dropdown ul 					{ width: 220px; visibility: hidden; position: absolute; top: 100%; left: 0; border-top: 1px solid #999; border-bottom: 1px solid #999;}
+ul.dropdown ul li 					{ font-weight: normal; background: #f6f6f6; color: #000;  float: none; border-left: 1px solid #999; border-right: 1px solid #999; }
+											/* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a				{ border-right: none; width: 100%; display: inline-block; }
+
+/* LEVEL THREE */
+ul.dropdown ul ul					{ left: 100%; top: 0; }
+ul.dropdown li:hover > ul 	{ visibility: visible; }

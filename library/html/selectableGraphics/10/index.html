@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Selectable Graphics - HTML</title>
+<meta name="viewport" content="user-scalable=no, width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/content.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="content_container">
+    	<div class="bg_box">
+      		<div class="header">
+  				<h3 class="content_title">Select Tab 10</h3>
+      		</div>
+			<div id="inner_bg">
+		<div class="menu_left">
+			<div class="box_right">	
+				<ul id="tabs">
+					<li><a href="#" tabindex="8" name="tab1">General Guidelines</a></li>
+					<li><a href="#" tabindex="10" name="tab2">Message Template</a></li>
+					<li><a href="#" tabindex="12" name="tab3">Assigned Value</a></li>
+					<li><a href="#" tabindex="14" name="tab4">Examples</a></li>
+					<li><a href="#" tabindex="16" name="tab5">IPAWS WEA Template</a></li>
+					<li><a href="#" tabindex="18" name="tab6">Examples</a></li>
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+
+			<div id="content1">
+				<div id="tab1" tabindex="9">
+					<p class="box_left_inner"><strong>General Guideliness</strong></p>
+					<div class="box_left_inner">		
+						<p>In order to successfully send a Wireless Emergency Alert, the alert must contain certain values for these fields, reflecting "Imminent Threat":</p>
+						<ul>
+							<li>Urgency: Immediate or Expected</li>
+							<li>Severity: Extreme or Severe</li>
+							<li>Certainty: Observed or Likely</li>
+						</ul>
+						<p>Because WEA messages are limited to 90 characters, it is very important to maximize their effectiveness. Consider the following factors when writing WEA messages:</p>
+						<ul>
+							<li>Does the message drive the recipient to take life-saving action?</li>
+							<li>Does it direct people to other sources of information (for more information, due to the 90 character limit)?</li>
+							<li>Did you ensure that the message does not contain URLs or phone numbers? </li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="tab2" tabindex="11">
+					<p class="box_left_inner"><strong>Message Template</strong></p>
+					<div class="box_left_inner">
+						<p>[Event name corresponding to event code element]<br><br>in this area til<br><br>[Expiration time in local time zone derived from Expires element]<br><br>[Assigned value derived from instruction-specific event code (EVI, SPW) or response type element; click on next tab for examples (3rd description)]<br><br>[Sender Name value, typically associated with the alert originator log in ID]</p>
+					</div>
+				</div>
+
+				<div id="tab3" tabindex="13"><p class="box_left_inner"><strong>Assigned Value</strong></p>
+					<div class="box_left_inner">
+						<p>Effective alert messages also address the needs of persons with access and functional needs. From an access and functional needs perspective, keep the following in mind when composing a message:
+						<ul>
+							<li>Clear and simple language</li>
+							<li>Avoid non-standard language and terminology to facilitate easier  text-to-speech conversion and use of screen reading devices</li>
+							<li>Consistency of audio with message text </li>
+							<li>Ample text and audio to explain images/maps </li>
+						</ul></p>
+					</div>
+				</div>
+
+				<div id="tab4" tabindex="15"><p class="box_left_inner"><strong>Examples</strong></p>
+					<div class="box_left_inner">
+						<p>Effective alert messages also address the needs of persons with access and functional needs. From an access and functional needs perspective, keep the following in mind when composing a message:
+						<ul>
+							<li>Clear and simple language</li>
+							<li>Avoid non-standard language and terminology to facilitate easier  text-to-speech conversion and use of screen reading devices</li>
+							<li>Consistency of audio with message text </li>
+							<li>Ample text and audio to explain images/maps </li>
+						</ul></p>
+					</div>
+				</div>
+
+				<div id="tab5" tabindex="17"><p class="box_left_inner"><strong>Examples</strong></p>
+					<div class="box_left_inner">
+						<p>Effective alert messages also address the needs of persons with access and functional needs. From an access and functional needs perspective, keep the following in mind when composing a message:
+						<ul>
+							<li>Clear and simple language</li>
+							<li>Avoid non-standard language and terminology to facilitate easier  text-to-speech conversion and use of screen reading devices</li>
+							<li>Consistency of audio with message text </li>
+							<li>Ample text and audio to explain images/maps </li>
+						</ul></p>
+					</div>
+				</div>
+   
+				<div id="tab6" tabindex="19"><p class="box_left_inner"><strong>IPAWS WEA Template</strong></p>
+					<div class="box_left_inner">
+						<p>Effective alert messages also address the needs of persons with access and functional needs. From an access and functional needs perspective, keep the following in mind when composing a message:
+						<ul>
+							<li>Clear and simple language</li>
+							<li>Avoid non-standard language and terminology to facilitate easier  text-to-speech conversion and use of screen reading devices</li>
+							<li>Consistency of audio with message text </li>
+							<li>Ample text and audio to explain images/maps </li>
+						</ul></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,749 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/main-pages.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="cleartype" content="on">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="styles/normalize.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" media="only screen and (max-width: 767px)" href="css/C2iLib-small.css">
+<link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/C2iLib.css">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>C2 Interactive Library</title>
+<!-- InstanceEndEditable -->
+<script src="js/vendor/jquery-1.11.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="js/html5shiv-min.js"></script>
+	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<![endif]-->
+<!-- InstanceBeginEditable name="head" -->
+<script type="text/javascript">
+var currentPage = "html";
+
+var sections = ["drag-drop", "knowledge-check", "pop-up", "dropdown-menu", "content-slider", "selectable-graphic", "audio-video", "other"];
+
+</script>
+<script src="js/main.js"></script>
+<!-- InstanceEndEditable -->
+
+</head>
+
+<body>
+
+<div id="wraper-inner">
+
+<div id="top-container">
+<header>
+  <div id="logo"><img src="sysimages/header/top_logo.png" width="212" height="52" alt="C2 Technologies Inc."/></div>
+  
+  <h1><img src="sysimages/header/header_Title.png" alt="interactive Library" width="352" height="25" /></h1>
+
+  <div class="top-bar-1">
+  <div id="contact"><a href="http://c2ti.com/contact/contact_us.html" target="_blank"><img src="sysimages/header/contact_0.png" onMouseOver="this.src='sysimages/header/contact_2.png'" onMouseOut="this.src='sysimages/header/contact_0.png'" width="60" height="29" alt="contact"/></a></div>
+  
+  <div id="v-bar-1" class="v-bars-1"><img src="sysimages/header-v-bar.jpg" width="1" height="26"/></div>
+  
+  <div id="about"><a href="http://c2ti.com/company/company_overview.html" target="_blank"><img src="sysimages/header/about_0.png" onMouseOver="this.src='sysimages/header/about_2.png'" onMouseOut="this.src='sysimages/header/about_0.png'" width="60" height="29" alt="about"/></a></div>
+  
+  <div id="v-bar-2" class="v-bars-1"><img src="sysimages/header-v-bar.jpg" width="1" height="26"/></div>
+  
+  <div id="faq"><a href="#" target="_blank"><img src="sysimages/header/faq_0.png" onMouseOver="this.src='sysimages/header/faq_2.png'" onMouseOut="this.src='sysimages/header/faq_0.png'" width="60" height="29" alt="faqs"/></a></div>
+  </div> <!-- end of top-bar-1 -->
+  
+  <div id="menu-icon"><a href="#1" onclick="toggleMenu();"><img src="sysimages/nav-icon.png" width="20" height="20" alt="menu icon"/></a>
+  </div>
+  
+  <div class="top-bar-2">
+  <div id="flash"><a href="flash.html"><img src="sysimages/header/flash_0.png" onMouseOver="this.src='sysimages/header/flash_2.png'" onMouseOut="this.src='sysimages/header/flash_0.png'" width="60" height="35" alt="flash"/></a></div>
+  
+  <div id="v-bar-3" class="v-bars-2"><img src="sysimages/header-v-bar.jpg" width="1" height="26"/></div>
+  
+  <div id="home"><a href="index.html"><img src="sysimages/header/home_0.png" onMouseOver="this.src='sysimages/header/home_2.png'" onMouseOut="this.src='sysimages/header/home_0.png'" width="60" height="35" alt="home"/></a></div>
+  
+  <div id="v-bar-4" class="v-bars-2"><img src="sysimages/header-v-bar.jpg" width="1" height="26"/></div>
+  
+  <div id="html"><a href="html.html"><img src="sysimages/header/html_0.png" onMouseOver="this.src='sysimages/header/html_2.png'" onMouseOut="this.src='sysimages/header/html_0.png'" width="60" height="35" alt="html"/></a></div>
+  </div> <!-- end of top-bar-2 -->
+  
+</header>
+
+<!-- InstanceBeginEditable name="Nav" -->
+<nav id="top-bar">
+
+  <div id="dnd" class="nav-button">
+  	<a href="#1" onclick="showThisSection(0);"><img src="sysimages/html/drag_0.png" onMouseOver="this.src='sysimages/html/drag_2.png'" onMouseOut="this.src='sysimages/html/drag_0.png'" width="95" height="81" alt="drag and drop"/></a>
+  </div>
+  
+  <div id="kc" class="nav-button">
+  	<a href="#2" onclick="showThisSection(1);"><img src="sysimages/html/knowledge_0.png" onMouseOver="this.src='sysimages/html/knowledge_2.png'" onMouseOut="this.src='sysimages/html/knowledge_0.png'" width="95" height="81" alt="knowledge check"/></a>
+  </div>
+  
+  <div id="pop" class="nav-button">
+  	<a href="#3" onclick="showThisSection(2);"><img src="sysimages/html/pop_up_0.png" onMouseOver="this.src='sysimages/html/pop_up_2.png'" onMouseOut="this.src='sysimages/html/pop_up_0.png'" width="95" height="81" alt="pop ups"/></a>
+  </div>
+  
+  <div id="ddm" class="nav-button">
+  	<a href="#4" onclick="showThisSection(3);"><img src="sysimages/html/dropDown_0.png" onMouseOver="this.src='sysimages/html/dropDown_2.png'" onMouseOut="this.src='sysimages/html/dropDown_0.png'" width="95" height="81" alt="dropdown menu"/></a>
+  </div>
+  
+  <div id="slider" class="nav-button">
+  	<a href="#5" onclick="showThisSection(4);"><img src="sysimages/html/slider_0.png" onMouseOver="this.src='sysimages/html/slider_2.png'" onMouseOut="this.src='sysimages/html/slider_0.png'" width="95" height="81" alt="content slider"/></a>
+  </div>
+  
+  <div id="graf" class="nav-button">
+  	<a href="#6" onclick="showThisSection(5);"><img src="sysimages/html/selectable_0.png" onMouseOver="this.src='sysimages/html/selectable_2.png'" onMouseOut="this.src='sysimages/html/selectable_0.png'" width="95" height="81" alt="selectable graphics"/></a>
+  </div>
+  
+  <div id="av" class="nav-button">
+  	<a href="#7" onclick="showThisSection(6);"><img src="sysimages/html/AV_0.png" onMouseOver="this.src='sysimages/html/AV_2.png'" onMouseOut="this.src='sysimages/html/AV_0.png'" width="95" height="81" alt="audio/video"/></a>
+  </div>
+
+</nav><!-- End of top-bar -->
+
+<div id="drop-menu">
+    <a href="#1" onclick="closeMenu(); showThisSection(0);" class="menu-item">Drag & Drops <i class="fa fa-caret-right"></i></a>
+    <a href="#2" onclick="closeMenu(); showThisSection(1);" class="menu-item">Knowledge Checks <i class="fa fa-caret-right"></i></a>
+    <a href="#3" onclick="closeMenu(); showThisSection(2);" class="menu-item">Popups <i class="fa fa-caret-right"></i></a>
+    <a href="#4" onclick="closeMenu(); showThisSection(3);" class="menu-item">Dropdown Menu <i class="fa fa-caret-right"></i></a>
+    <a href="#5" onclick="closeMenu(); showThisSection(4);" class="menu-item">Content Slider <i class="fa fa-caret-right"></i></a>
+    <a href="#6" onclick="closeMenu(); showThisSection(5);" class="menu-item">Selectable Graphics <i class="fa fa-caret-right"></i></a>
+    <a href="#7" onclick="closeMenu(); showThisSection(6);" class="menu-item">Audio / Video <i class="fa fa-caret-right"></i></a>
+    <a href="#8" onclick="closeMenu(); showThisSection(7);" class="menu-item">Others <i class="fa fa-caret-right"></i></a>
+</div><!-- End of drop-menu -->
+ 
+<!-- InstanceEndEditable -->
+</div><!-- End of top-container -->
+
+<div id="main">
+<!-- InstanceBeginEditable name="MainContent" -->
+
+<section id="drag-drop">
+  <div class="sec-divider1"></div>
+  
+  <div class="sec-title">
+    <div id="title-dnd" class="title-img"><img src="sysimages/html/drag_dropTitle.png" width="175" height="68" alt="drag and drop"/></div>
+    <div class="description">
+		<div class="text">Lorem ipsum dolor sit amet, consectetur adipisising elit, sed do eiusmod tempor incididunt ut laabore et dolore magna aliqua.  Ut enim ad minim veiam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseqat.</div>
+    </div>
+  </div>
+  <div class="clear-both"></div>
+  
+  <div class="sec-divider2"></div>
+  
+  <div class="int-box-row">
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/dragPic_1.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Build an Ordered List</div>
+      </div>
+
+      
+      <div class="download"><a href="library/html/drag_and_drops/1/html_dd_001.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/drag_and_drops/1/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/dragPic_2.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Drag to Trashcan</div>
+      </div>
+
+      
+      <div class="download"><a href="library/html/drag_and_drops/2/html_dd_002.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/drag_and_drops/2/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/dragPic_3.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Drag to Multiple Target Areas</div>
+      </div>
+      
+      <div class="download"><a href="library/html/drag_and_drops/3/html_dd_003.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/drag_and_drops/3/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+
+  </div>
+  
+</section><!-- End of drag-drop -->
+
+<section id="knowledge-check">
+  <div class="sec-divider1"></div>
+  
+  <div class="sec-title">
+    <div id="title-kc" class="title-img"><img src="sysimages/html/knowledge_checkTitle.png" width="239" height="63" alt="knowledge check"/></div>
+    <div class="description">
+		<div class="text">Lorem ipsum dolor sit amet, consectetur adipisising elit, sed do eiusmod tempor incididunt ut laabore et dolore magna aliqua.  Ut enim ad minim veiam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseqat.</div>
+    </div>
+  </div>
+  <div class="clear-both"></div>
+  
+  <div class="sec-divider2"></div>
+  
+  <div class="int-box-row">
+    <div class="int-box">
+      <div class="int-title">
+        <div class="text">True/False</div>
+      </div>
+      
+      <div class="download"><a href="library/html/questions/1/html_knowledgeCheck_001.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/questions/1/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-title">
+        <div class="text">Multiple Choices</div>
+      </div>
+      
+      <div class="download"><a href="library/html/questions/2/html_dd_002.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/questions/2/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/checkPic_3.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Multiple Answers</div>
+      </div>
+      
+      <div class="download"><a href="library/html/questions/3/html_dd_003.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/questions/3/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-title">
+        <div class="text">2-column Click Grid</div>
+      </div>
+      
+      <div class="download"><a href="library/html/uestions/4/html_dd_004.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/questions/4/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/checkPic_5.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Multiple-column Click Grid</div>
+      </div>
+      
+      <div class="download"><a href="library/html/questions/5/html_dd_005.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/questions/5/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/checkPic_6.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Multiple-column, Multiple-answer Click Grid</div>
+      </div>
+      
+      <div class="download"><a href="library/html/questions/6/html_dd_006.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/questions/6/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-title">
+        <div class="text">Place in Order by Text Entry</div>
+      </div>
+      
+      <div class="download"><a href="library/html/questions/7/html_dd_007.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/questions/7/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+
+  </div>
+  
+</section><!-- End of knowledge-check -->
+
+<section id="pop-up">
+  <div class="sec-divider1"></div>
+  
+  <div class="sec-title">
+    <div id="title-pop" class="title-img"><img src="sysimages/html/pop_upsTitle.png" width="168" height="46" alt="pop ups"/></div>
+    <div class="description">
+		<div class="text">Lorem ipsum dolor sit amet, consectetur adipisising elit, sed do eiusmod tempor incididunt ut laabore et dolore magna aliqua.  Ut enim ad minim veiam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseqat.</div>
+    </div>
+  </div>
+  <div class="clear-both"></div>
+  
+  <div class="sec-divider2"></div>
+  
+  <div class="int-box-row">
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/popPic_1.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Text Link Text Popup</div>
+      </div>
+      
+      <div class="download"><a href="library/html/popups/link/1/html_linkPopup_001.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/popups/link/1/10000.htm" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/popPic_2.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Text Link Video Popup</div>
+      </div>
+      
+      <div class="download"><a href="library/html/popups/link/5/html_linkPopup_005.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/popups/link/5/50000.htm" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/popPic_3.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Graphic Link Text Popup</div>
+      </div>
+      
+      <div class="download"><a href="library/html/popups/graphic/1/html_graphicPopup_001.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/popups/graphic/1/10000.htm" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/popPic_4.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Graphic Link Video Popup</div>
+      </div>
+      
+      <div class="download"><a href="library/html/popups/graphic/2/html_graphicPopup_002.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/popups/graphic/2/20000.htm" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/popPic_5.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Shadowbox Popup</div>
+      </div>
+      
+      <div class="download"><a href="library/html/popups/graphic/3/html_graphicPopup_003.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/popups/graphic/3/30000.htm" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+
+  </div>
+  
+</section><!-- End of pop-up -->
+
+<section id="dropdown-menu">
+  <div class="sec-divider1"></div>
+  
+  <div class="sec-title">
+    <div id="title-ddm" class="title-img"><img src="sysimages/html/drop_down_Title.png" width="180" height="74" alt="dropdown menu"/></div>
+    <div class="description">
+		<div class="text">Lorem ipsum dolor sit amet, consectetur adipisising elit, sed do eiusmod tempor incididunt ut laabore et dolore magna aliqua.  Ut enim ad minim veiam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseqat.</div>
+    </div>
+  </div>
+  <div class="clear-both"></div>
+  
+  <div class="sec-divider2"></div>
+  
+  <div class="int-box-row">
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/dropPic_1.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Mouseover Dropdown Menu</div>
+      </div>
+      
+      <div class="download"><a href="library/html/drop_down_menus/1/html_dropDownMenu_001.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/drop_down_menus/1/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/dropPic_2.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Mouseover Tabs</div>
+      </div>
+      
+      <div class="download"><a href="library/html/drop_down_menus/2/html_dropDownMenu_002.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/drop_down_menus/2/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+  </div>
+  
+</section><!-- End of dropdown-menu -->
+
+<section id="content-slider">
+  <div class="sec-divider1"></div>
+  
+  <div class="sec-title">
+    <div id="title-cs" class="title-img"><img src="sysimages/html/content_sliderTitle.png" width="185" height="62" alt="content slider"/></div>
+    <div class="description">
+		<div class="text">Lorem ipsum dolor sit amet, consectetur adipisising elit, sed do eiusmod tempor incididunt ut laabore et dolore magna aliqua.  Ut enim ad minim veiam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseqat.</div>
+    </div>
+  </div>
+  <div class="clear-both"></div>
+  
+  <div class="sec-divider2"></div>
+  
+  <div class="int-box-row">
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/slidePic_1.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Left Tab, Right Slides</div>
+      </div>
+      
+      <div class="download"><a href="library/html/content_sliders/1/html_contentSliders_001.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/content_sliders/1/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/slidePic_2.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Animated Slides</div>
+      </div>
+      
+      <div class="download"><a href="library/html/content_sliders/2/html_contentSliders_002.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/content_sliders/2/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/slidePic_3.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Fade-in Slides</div>
+      </div>
+      
+      <div class="download"><a href="library/html/content_sliders/3/html_contentSliders_003.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/content_sliders/3/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+  </div>
+  
+</section><!-- End of content-slider -->
+
+<section id="selectable-graphic">
+  <div class="sec-divider1"></div>
+  
+  <div class="sec-title">
+    <div id="title-sg" class="title-img"><img src="sysimages/html/selectable_graphicsTitle.png" width="228" height="62" alt="selectable graphic"/></div>
+    <div class="description">
+		<div class="text">Lorem ipsum dolor sit amet, consectetur adipisising elit, sed do eiusmod tempor incididunt ut laabore et dolore magna aliqua.  Ut enim ad minim veiam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseqat.</div>
+    </div>
+  </div>
+  <div class="clear-both"></div>
+  
+  <div class="sec-divider2"></div>
+  
+  <div class="int-box-row">
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/selectPic_1.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Bottom Graphic Tabs</div>
+      </div>
+      
+      <div class="download"><a href="library/html/selectableGraphics/1/html_selectableGraphics_001.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/selectableGraphics/1/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/selectPic_2.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Specially-Shaped Graphic Tabs</div>
+      </div>
+      
+      <div class="download"><a href="library/html/selectableGraphics/2/html_selectableGraphics_002.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/selectableGraphics/2/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/selectPic_3.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Selectable Graphic</div>
+      </div>
+      
+      <div class="download"><a href="library/html/selectableGraphics/3/html_selectableGraphics_003.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/selectableGraphics/3/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/selectPic_4.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Sliding Door Effects</div>
+      </div>
+      
+      <div class="download"><a href="library/html/selectableGraphics/4/html_selectableGraphics_004.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/selectableGraphics/4/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/selectPic_5.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Selectable Graphic</div>
+      </div>
+      
+      <div class="download"><a href="library/html/selectableGraphics/5/html_selectableGraphics_005.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/selectableGraphics/5/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/selectPic_6.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Selectable Graphic</div>
+      </div>
+      
+      <div class="download"><a href="library/html/selectableGraphics/6/html_selectableGraphics_006.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/selectableGraphics/6/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/selectPic_7.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Selectable Tabs</div>
+      </div>
+      
+      <div class="download"><a href="library/html/selectableGraphics/7/html_selectableGraphics_007.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/selectableGraphics/7/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/selectPic_8.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Selectable Circles</div>
+      </div>
+      
+      <div class="download"><a href="library/html/selectableGraphics/8/html_selectableGraphics_008.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/selectableGraphics/8/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/selectPic_9.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Selectable Spheres with Animation</div>
+      </div>
+      
+      <div class="download"><a href="library/html/selectableGraphics/9/html_selectableGraphics_009.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/selectableGraphics/9/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/selectPic_10.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Selectable Buttons</div>
+      </div>
+      
+      <div class="download"><a href="library/html/selectableGraphics/10/html_selectableGraphics_010.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/selectableGraphics/10/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/selectPic_11.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Selectable Panels</div>
+      </div>
+      
+      <div class="download"><a href="library/html/selectableGraphics/11/html_selectableGraphics_011.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/selectableGraphics/11/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-img"><img src="images/html/selectPic_12.png" width="221" height="177" alt=""/></div>
+      <div class="int-title">
+        <div class="text">Selectable Graphics</div>
+      </div>
+      
+      <div class="download"><a href="library/html/selectableGraphics/12/html_selectableGraphics_012.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/selectableGraphics/12/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+
+        
+  </div>
+  
+</section><!-- End of selectable-graphic -->
+
+<section id="audio-video">
+  <div class="sec-divider1"></div>
+  
+  <div class="sec-title">
+    <div id="title-av" class="title-img"><img src="sysimages/html/audio-vidTitle.png" width="225" height="32" alt="audio video"/></div>
+    <div class="description">
+		<div class="text">Lorem ipsum dolor sit amet, consectetur adipisising elit, sed do eiusmod tempor incididunt ut laabore et dolore magna aliqua.  Ut enim ad minim veiam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseqat.</div>
+    </div>
+  </div>
+  <div class="clear-both"></div>
+  
+  <div class="sec-divider2"></div>
+  
+  <div class="int-box-row">
+    <div class="int-box">
+      <div class="int-title">
+        <div class="text">Audio with Custom Controls</div>
+      </div>
+      
+      <div class="download"><a href="library/html/audio/1/html_audio_001.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/audio/1/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-title">
+        <div class="text">Video with Controls</div>
+      </div>
+      
+      <div class="download"><a href="library/html/video/1/html_video_001.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/video/1/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-title">
+        <div class="text">Video with Custom Controls</div>
+      </div>
+      
+      <div class="download"><a href="library/html/video/2/html_video_002.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/html/video/2/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+  </div>
+  
+</section><!-- End of audio-video -->
+
+<section id="other">
+  <div class="sec-divider1"></div>
+  
+  <div class="sec-title">
+    <div id="title-o" class="title-img"><img src="sysimages/html/lectora.png" width="225" height="32" alt="Others"/></div>
+    <div class="description">
+		<div class="text">Lorem ipsum dolor sit amet, consectetur adipisising elit, sed do eiusmod tempor incididunt ut laabore et dolore magna aliqua.  Ut enim ad minim veiam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseqat.</div>
+    </div>
+  </div>
+  <div class="clear-both"></div>
+  
+  <div class="sec-divider2"></div>
+  
+  <div class="int-box-row">
+    <div class="int-box">
+      <div class="int-title">
+        <div class="text">Lectora Layout Sample 1</div>
+      </div>
+      
+      <div class="download"><a href="library/lectora/lectora-templates/1/lectora-templates-01.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/lectora/lectora-templates/1/html/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-title">
+        <div class="text">Lectora Layout Sample 2</div>
+      </div>
+      
+      <div class="download"><a href="library/lectora/lectora-templates/2/lectora-templates-02.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/lectora/lectora-templates/2/html/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-title">
+        <div class="text">Captivate Layout Sample 1</div>
+      </div>
+      
+      <div class="download"><a href="library/captivate/captivate-templates/1/captivate-templates-01.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/captivate/captivate-templates/1/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-title">
+        <div class="text">Captivate Layout Sample 2</div>
+      </div>
+      
+      <div class="download"><a href="library/captivate/captivate-templates/2/captivate-templates-02.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/captivate/captivate-templates/2/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-title">
+        <div class="text">Captivate Layout Sample 3</div>
+      </div>
+      
+      <div class="download"><a href="library/captivate/captivate-templates/3/captivate-templates-03.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/captivate/captivate-templates/3/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+
+    <div class="int-box">
+      <div class="int-title">
+        <div class="text">Storyline Sample 1</div>
+      </div>
+      
+      <div class="download"><a href="library/storyline/storyline-templates/1/storyline-templates-01.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/storyline/storyline-templates/1/story.html" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+
+    <div class="int-box">
+      <div class="int-title">
+        <div class="text">Power Point Sample 1</div>
+      </div>
+      
+      <div class="download"><a href="library/powerpoint/powerpoint-templates/1/powerpoint-templates-01.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/powerpoint/powerpoint-templates/1/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+    <div class="int-box">
+      <div class="int-title">
+        <div class="text">Power Point Sample 2</div>
+      </div>
+      
+      <div class="download"><a href="library/powerpoint/powerpoint-templates/2/powerpoint-templates-02.zip" target="_blank"><img src="sysimages/content/download_0.png" onMouseOver="this.src='sysimages/content/download_2.png'" onMouseOut="this.src='sysimages/content/download_0.png'" width="94" height="22" alt="download"/></a></div>
+      
+      <div class="demo"><a href="library/powerpoint/powerpoint-templates/2/" target="_blank"><img src="sysimages/content/demo_0.png" onMouseOver="this.src='sysimages/content/demo_2.png'" onMouseOut="this.src='sysimages/content/demo_0.png'" width="94" height="22" alt="demo"/></a></div>
+    </div>
+    
+  </div>
+  
+</section><!-- End of other -->
+
+<!-- InstanceEndEditable -->
+</div><!-- End of main -->
+
+</div><!-- End of wraper-inner -->
+
+<div id="footer-wrapper">
+<footer>
+<div id="tw"><a href="https://twitter.com/c2ti" target="_blank"><img src="sysimages/footer/twit_0.jpg" onMouseOver="this.src='sysimages/footer/twit_2.jpg'" onMouseOut="this.src='sysimages/footer/twit_0.jpg'" width="30" height="35" alt="twitter"/></a></div>
+
+<div id="fb"><a href="https://www.facebook.com/pages/C%C2%B2-Technologies-Inc/98452579888?ref=ts" target="_blank"><img src="sysimages/footer/face_0.jpg" onMouseOver="this.src='sysimages/footer/face_2.jpg'" onMouseOut="this.src='sysimages/footer/face_0.jpg'" width="30" height="37" alt="facebook"/></a></div>
+
+<div id="lnkn"><a href="https://www.linkedin.com/company/c2-technologies" target="_blank"><img src="sysimages/footer/linkedIn_0.jpg" onMouseOver="this.src='sysimages/footer/linkedIn_2.jpg'" onMouseOut="this.src='sysimages/footer/linkedIn_0.jpg'" width="30" height="37" alt="linkedin"/></a></div>
+
+
+</footer>
+</div>
+
+</body>
+<!-- InstanceEnd --></html>

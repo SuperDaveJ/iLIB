@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document for medium size popup window */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+p { margin-bottom: 10px; }
+
+ul, ol { margin-left: 30px; }
+li { padding: 3px 0; }
+
+a img { border:none; outline:none;}
+
+h1 { 
+	position: absolute; 
+	left: 20px;
+	top: 20px;
+	font-size: 20px;
+}
+
+#popText {
+	position: absolute;
+	left: 20px;
+	top: 55px;
+	width: 90%;
+	height: 375px;
+	overflow: auto;
+	padding-right: 8px;
+}

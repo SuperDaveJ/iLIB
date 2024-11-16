@@ -1,0 +1,210 @@
+/*  CSS Document                             */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	font-size: 16px;
+}
+
+.timeline {
+	position: relative;
+	margin: 30px 0 20px;
+}
+
+.timeline h1 {
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	border-bottom: 1px solid rgba(255,255,255, 0.5);
+	font-size: 1.2em;
+	z-index: 1;
+	text-transform: uppercase;
+	color: #fff;
+	padding-bottom: 10px;
+	letter-spacing: 2px;
+}
+
+.timeline .panel_container {
+	position: relative; 
+	margin: 10px 0px 0px 0px; 
+	width: 100%; 
+	height: 300px;
+	overflow: hidden; 
+	background-color: #df4502;
+	background: #26016a; /* Old browsers */
+	background: -moz-linear-gradient(left,  #26016a 45%, #d14001 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(45%,#26016a), color-stop(50%,#d14001)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #26016a 45%,#d14001 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #26016a 45%,#d14001 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #26016a 45%,#d14001 50%); /* IE10+ */
+	background: linear-gradient(to right,  #26016a 45%,#d14001 50%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26016a', endColorstr='#d14001',GradientType=1 ); /* IE6-9 */
+}
+
+.timeline .background_slider {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+}
+
+.timeline .background_slider img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.timeline .panel_slider {
+	position: absolute;
+	width: 100%;
+}
+
+.timeline .panel {
+	position: absolute;
+	width: 340px;
+}
+
+.timeline .panel_content {
+	position: relative;
+	padding: 75px 10px 0px 40px;
+}
+
+.timeline .panel_content h2 {
+	font-size: 1em;
+	color: #fff;
+	margin: 0 0 8px;
+}
+
+.timeline .panel_content p {
+	position: relative;
+	color: rgba(255,255,255,0.55);
+	margin: 0 0 1em;
+}
+
+.timeline .panel_content .label {
+	position: absolute;
+	top: 12px;
+	right: 0px;
+	font-size: 4em;
+	color: rgba(255,255,255,0.2);
+	font-family: Georgia;
+	text-align: right;
+}
+
+.timeline nav {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: inherit;
+	text-align: center;
+}
+
+.timeline nav a {
+	color: #fff;
+	font-size: 0.9em;
+	display: inline-block;
+	padding: 5px 10px;
+	border-color: #fff;
+	border-style: solid;
+	border-left-width: 5px;
+	border-right-width: 5px;
+	border-bottom-width: 0px;
+	border-top-width: 8px;
+	text-decoration: none;
+}
+
+.timeline nav a:first-child {
+	border-left-width: 8px;
+}
+
+.timeline nav a:last-child {
+	border-right-width: 8px;
+}
+
+.timeline nav a.selected {
+	background-color: rgba(255,255,255,0.55);
+}
+
+.timeline .panel img.arpanet {
+	margin: 0 0 10px;
+}
+
+.timeline .panel img.tcp {
+	margin: 10px 20px 0 0;
+	float: left;
+}
+
+.timeline .panel img.tcp_ip {
+	margin-right: 20px;
+	float: left;
+}
+
+.timeline .panel img.www {
+	margin: 10px 15px 0 0;
+	float: left;
+}
+
+.timeline .panel img.voip {
+	margin: 10px 0 0 10px;
+	float: right;
+}
+
+.timeline .panel img.telecommunications_usage {
+	margin: 10px 30px 0 10px;
+	float: right;
+}
+
+.clear_both {
+	clear: both;
+}
+
+@media screen and (max-width: 500px) {
+.timeline {
+	background: #81194c url(../images/background_small.jpg) center top no-repeat;
+	margin: 0px;
+}
+
+.timeline h1 {
+	text-align: left;
+	padding: 10px 10px 10px 20px;
+}
+
+.timeline .panel_container {
+	background: none;
+	height: auto;
+	margin: 0px;
+	filter: none;
+}
+
+.timeline .panel_slider {
+	position: static;
+	height: auto;
+}
+
+.timeline .panel {
+	position: static;
+	width: auto;
+	height: auto;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	padding-bottom: 20px;
+}
+
+.timeline nav { display: none; }
+
+.timeline .background_slider { display: none; }
+
+.timeline .panel:first-child { padding-top: 40px; }
+
+.timeline .panel_content { padding-top: 60px; }
+
+.timeline .panel_content .label { top: -10px; right: 10px; }
+
+.timeline .panel img.www { margin: 0 25px 0 0; }
+
+.timeline .panel img.voip { margin: 10px 40px 0 20px; }
+
+.timeline .panel img.telecommunications_usage { float: left; margin: 10px 15px 0 0; }
+	
+}

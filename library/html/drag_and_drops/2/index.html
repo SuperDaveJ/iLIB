@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Trashcan - Drag and Drop</title>
+<script language="javascript" type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/faa_edr_content_c3.js"></script>
+<script type="text/javascript" src="js/wz_dragdrop.js"></script>
+<script type="text/javascript" src="js/DD_Trashcan.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+<div class="content_container">
+      <div class="bg_box">
+      <div class="header">
+  <h3 class="content_title">Knowledge Check Question</h3>
+      </div>
+<div id="inner_bg">
+<div id="question">Drag the item into the trash can that is NOT one of the areas with a potential for unintended differences in replacement parts.</div>
+
+  <div id="targetHolder" style="position: relative; left: 605px; top: 58px; width: 330px; height: 318px;">
+    <!--=========== Target layers ===========-->
+    <div id="target" style="position: absolute; left: 40px; top: 78px; width: 120px; height: 223px;"><img src="assets/trashcan.png" width="158" height="223" alt="Graphic of a trash can" /></div>
+  </div>
+  
+  <!--=========== Drag items layers ===========-->
+  <div id="dragHolder" style="position: absolute; top: 76px; left: 1px; height: 364px; width: 604px;">
+    
+  <!--=========== drag layers ===========-->
+    <div id="drag1" style="position: absolute; left: 123px; top: 35px; width: 107px; height: 14px; z-index: 3;">
+      <img name="img1" id="img1" src="assets/30180a.png" width="107" height="14" border="0" alt="Tolerances" title="Tolerances" /></div>
+    
+    <div id="drag2" style="position: absolute; left: 123px; top: 68px; width: 128px; height: 14px; z-index: 3;">
+      <img name="img2" id="img2" src="assets/30180b.png" width="128" height="14" border="0" alt="Construction" title="Construction" /></div>
+    
+    <div id="drag3" style="position: absolute; left: 123px; top: 103px; width: 191px; height: 18px; z-index: 3;">
+      <img src="assets/30180c.png" name="img3" width="191" height="18" border="0" id="img3" alt="Material Properties" title="Material Properties" /></div>
+    
+    <div id="drag4" style="position: absolute; left: 123px; top: 140px; width: 220px; height: 18px; z-index: 3;">
+      <img src="assets/30180d.png" name="img4" width="220" height="18" border="0" id="img4" alt="Use of Applicant SOPs" title="Use of Applicant SOPs" /></div>
+    
+    <div id="drag5" style="position: absolute; left: 123px; top: 174px; width: 121px; height: 18px; z-index: 3;">
+      <img src="assets/30180e.png" name="img5" width="121" height="18" border="0" id="img5" alt="Type design" title="Type design" /></div>
+      
+      <div id="drag6" style="position: absolute; left: 123px; top: 209px; width: 143px; height: 18px; z-index: 3;">
+      <img src="assets/30180f.png" name="img6" width="143" height="18" border="0" id="img6" alt="Manufacturing" title="Manufacturing" /></div>
+      
+      <div id="drag7" style="position: absolute; left: 123px; top: 245px; width: 99px; height: 17px; z-index: 3;">
+      <img src="assets/30180g.png" name="img7" width="99" height="17" border="0" id="img7" alt="Geometry" title="Geometry" /></div>
+      
+      <div id="drag8" style="position: absolute; left: 123px; top: 280px; width: 309px; height: 18px; z-index: 3;">
+      <img src="assets/30180h.png" name="img8" width="309" height="18" border="0" id="img8" alt="Material mechanical properties" title="Material mechanical properties" /></div>
+      
+      <div id="drag9" style="position: absolute; left: 123px; top: 314px; width: 280px; height: 18px; z-index: 3;">
+      <img src="assets/30180i.png" name="img9" width="280" height="18" border="0" id="img9" alt="Material physical properties" title="Material physical properties" /></div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  <!-- CLOSE #CONTENT_CONTAINER -->
+
+<script type="text/javascript">
+SET_DHTML("targetHolder"+NO_DRAG,"dragHolder"+NO_DRAG,
+"img1"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+500+MAXOFFTOP+10+MAXOFFBOTTOM+220,"img2"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+500+MAXOFFTOP+50+MAXOFFBOTTOM+170,"img3"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+500+MAXOFFTOP+100+MAXOFFBOTTOM+120,"img4"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+500+MAXOFFTOP+150+MAXOFFBOTTOM+120,"img5"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+500+MAXOFFTOP+200+MAXOFFBOTTOM+70,"img6"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+500+MAXOFFTOP+200+MAXOFFBOTTOM+50,"img7"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+500+MAXOFFTOP+300+MAXOFFBOTTOM+0,"img8"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+500+MAXOFFTOP+250+MAXOFFBOTTOM+0,"img9"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+500+MAXOFFTOP+300+MAXOFFBOTTOM+0, "target"+NO_DRAG);
+//NOTE: Set layers to draggable for this exercise does NOT work. 
+//		All draggable layers must be held in another layer like dragHolder in this example.
+
+var nCorrect = 1;
+var uCorrect = 0;
+var nObj = 9;
+
+var fdbkCorrect;
+fdbkCorrect = "<p>Good Job! Click on the Next arrow to continue.</p>";
+
+//Draggable objects are always in sequential order: img1, img2, ...
+//nCorrect imgs
+strCorrect = "img5";
+</script>
+</body>
+</html>

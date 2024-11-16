@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+.video_gallery_container {
+	height: 100%;
+	padding-top: 20px;
+}
+
+a.videoLink div.caption {
+	background-color: none;
+	background-image: url(../images/ie_caption_transparency.png);
+}

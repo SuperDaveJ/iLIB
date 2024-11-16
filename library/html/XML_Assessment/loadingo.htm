@@ -1,0 +1,41 @@
+<html>
+<head><title>Loading...</title></head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+<body>
+<div class="content_container">
+    <div class="alignLeft">
+      <div class="bg_box">
+      <div class="header">
+  <h3 class="content_title">MXL Driven KC</h3>
+      </div>
+<div id="inner_bg">
+
+<p align="center">MXL Assessment </p>
+<p align="center">All questions are in external .xml file. There are two groups knowledge check questions in this example. You may choose one of the following combinations.</p>
+<p align="center"><a href="javascript:selectGroup(0,'No')">Group A questions in order</a></p>
+<p align="center"><a href="javascript:selectGroup(0,'Yes')">Randomizing questions in group A</a></p>
+<p align="center"><a href="javascript:selectGroup(1,'No')">Group B questions in order</a></p>
+<p align="center"><a href="javascript:selectGroup(1,'Yes')">Randomizing questions in group B</a>
+<p align="center"><a href="javascript:selectGroup(1,'Yes')">Randomizing Group A, B and the questions in one group</a>
+  <script type="text/javascript">
+  
+  function selectGroup(x, y){
+	  parent.group = x;
+	  parent.blnRandom = y;
+	  parent.setGroupData();
+	  parent.startCourse();
+  }
+//$(document).ready( function() {
+//	parent.startCourse();
+//});
+  </script>
+  
+</p>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

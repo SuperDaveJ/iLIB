@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Click Grid - Knowledge Check Questions</title>
+<script language="javascript" type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/content.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript">
+var nRows, nCols;
+nRows = 7;	//does not include the first row which is for column title
+nCols = 3;	//does not include the first column which is for text
+widthTable = 95;	//table width
+widthCol0 = 70;	//first column (text) width. All other columns will be evenly divided.
+strCorrectRow1 = "111";		//correct answer for row 1.
+strCorrectRow2 = "011";		//correct answer for row 2.		//correct answer for row 3.
+strCorrectRow3 = "100";		//correct answer for row 3.
+strCorrectRow4 = "001";		//correct answer for row 4.
+strCorrectRow5 = "001";	
+//
+strCorrectRow6 = "011";
+
+strCorrectRow7 = "100";
+//alert(eval("strCorrectRow"+1));
+
+arrCorrectAns = new Array(nRows);
+arrUserAns = new Array(nRows);
+for (var i=0; i<nRows; i++) {
+	arrCorrectAns[i] = new Array(nCols);
+	arrUserAns[i] = new Array(nCols);
+	for (var j=0; j<nCols; j++) arrUserAns[i][j] = 0
+	arrCorrectAns[i] = eval('strCorrectRow'+ (i+1) +'.split(",")')
+}
+arrColWidth = new Array(nCols);
+for (var j=0; j<nCols; j++) {
+	arrColWidth[j] = Math.round((widthTable - widthCol0)/nCols) + "px";
+}
+
+//Specify row and column titles here.  You need to add or remove titles accordingly.
+arrColTitle = new Array(nCols+1);
+arrRowTitle = new Array(nRows+1);
+arrColTitle[0] = "Installation Approval Issue";
+arrColTitle[1] = "SVS";
+arrColTitle[2] = "EVS";
+arrColTitle[3] = "EFVS";
+//arrColTitle[4] = "CVS*";
+ 
+arrRowTitle[1] = "If information is displayed on the HUD, installation must meet all vision system requirements as well as HUD provisions.";
+arrRowTitle[2] = "Images should be tested during thermal crossovers.";
+arrRowTitle[3] = "Verify the accuracy and fidelity of information in databases on which the imagery is based.";
+arrRowTitle[4] = "Know if FPV is calculated with air mass FPV or Earth-referenced FPV.";
+arrRowTitle[5] = "14 CFR §25.773 does not contain adequate or appropriate standards for installation approval.";
+arrRowTitle[6] = "Sensor performance is not predictable, and can be affected by weather and visibility conditions.";
+arrRowTitle[7] = "The display can be exocentric or egocentric, but if implemented on a PFD, must be from the pilot’s perspective looking through the front window (i.e., egocentric)."
+ 
+var fdbkWrong1 = "<p>Incorrect. One or more of your answers is incorrect. </p><p>Select X to close this window and try again. </p>";
+
+var fdbkWrong2 = "<p>The correct answers are now displayed on the screen.</p><p>Select X to close this window.</p> ";
+
+var fdbkCorrect = "<p>Select X to close this window.</p>"; 
+
+</script>
+
+<script type="text/javascript" src="js/grid_jQuery.js"></script>
+</head>
+
+<body>
+<div class="content_container">
+    <div class="alignLeft">
+      <div class="bg_box">
+      <div class="header">
+  <h3 class="content_title">Knowledge Check Question</h3>
+      </div>
+<div id="inner_bg">
+
+
+	<div id="question">
+	  <p><strong>Review the statements below and identify the SVS, EVS, and EFVS installation approval requirements. Select Submit when you are finished.
+	  </strong>(Correcct answer: 111, 011, 100, 001, 001,011,100) </p>
+	  <form name="qForm" id="qForm"></form>
+	</div>
+
+	<div class="submit">
+		<a href='javascript:judgeInteraction()'><img src="assets/submit.png" id="submit" border="0" title="Submit" alt="Submit"></a>
+	</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

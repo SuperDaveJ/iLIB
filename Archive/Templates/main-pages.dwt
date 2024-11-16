@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="cleartype" content="on">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="styles/normalize.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" media="only screen and (max-width: 767px)" href="css/C2iLib-small.css">
+<link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/C2iLib.css">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>C2 Interaction Library</title>
+<!-- TemplateEndEditable -->
+<script src="js/vendor/jquery-1.11.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="js/html5shiv-min.js"></script>
+	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<![endif]-->
+<!-- TemplateBeginEditable name="head" -->
+<script type="text/javascript">
+
+</script>
+<!-- TemplateEndEditable -->
+
+</head>
+
+<body>
+
+<div id="wraper-inner">
+
+<div id="top-container">
+<header>
+  <div id="logo"><img src="../sysimages/header/top_logo.png" width="212" height="52" alt="C2 Technologies Inc."/></div>
+  
+  <h1><img src="../sysimages/header/header_Title.png" alt="interactive Library" width="352" height="25" /></h1>
+
+  <div class="top-bar-1">
+  <div id="contact"><a href="http://c2ti.com/contact/contact_us.html" target="_blank"><img src="../sysimages/header/contact_0.png" onMouseOver="this.src='sysimages/header/contact_2.png'" onMouseOut="this.src='sysimages/header/contact_0.png'" width="60" height="29" alt="contact"/></a></div>
+  
+  <div id="v-bar-1" class="v-bars-1"><img src="../sysimages/header-v-bar.jpg" width="1" height="26"/></div>
+  
+  <div id="about"><a href="http://c2ti.com/company/company_overview.html" target="_blank"><img src="../sysimages/header/about_0.png" onMouseOver="this.src='sysimages/header/about_2.png'" onMouseOut="this.src='sysimages/header/about_0.png'" width="60" height="29" alt="about"/></a></div>
+  
+  <div id="v-bar-2" class="v-bars-1"><img src="../sysimages/header-v-bar.jpg" width="1" height="26"/></div>
+  
+  <div id="faq"><a href="#" target="_blank"><img src="../sysimages/header/faq_0.png" onMouseOver="this.src='sysimages/header/faq_2.png'" onMouseOut="this.src='sysimages/header/faq_0.png'" width="60" height="29" alt="faqs"/></a></div>
+  </div> <!-- end of top-bar-1 -->
+  
+  <div id="menu-icon"><a href="#1" onclick="toggleMenu();"><img src="../sysimages/nav-icon.png" width="20" height="20" alt="menu icon"/></a>
+  </div>
+  
+  <div class="top-bar-2">
+  <div id="flash"><a href="flash.html"><img src="../sysimages/header/flash_0.png" onMouseOver="this.src='sysimages/header/flash_2.png'" onMouseOut="this.src='sysimages/header/flash_0.png'" width="60" height="35" alt="flash"/></a></div>
+  
+  <div id="v-bar-3" class="v-bars-2"><img src="../sysimages/header-v-bar.jpg" width="1" height="26"/></div>
+  
+  <div id="home"><a href="index.html"><img src="../sysimages/header/home_0.png" onMouseOver="this.src='sysimages/header/home_2.png'" onMouseOut="this.src='sysimages/header/home_0.png'" width="60" height="35" alt="home"/></a></div>
+  
+  <div id="v-bar-4" class="v-bars-2"><img src="../sysimages/header-v-bar.jpg" width="1" height="26"/></div>
+  
+  <div id="html"><a href="html.html"><img src="../sysimages/header/html_0.png" onMouseOver="this.src='sysimages/header/html_2.png'" onMouseOut="this.src='sysimages/header/html_0.png'" width="60" height="35" alt="html"/></a></div>
+  </div> <!-- end of top-bar-2 -->
+  
+</header>
+
+<!-- TemplateBeginEditable name="Nav" -->
+<nav id="top-bar">
+
+  <div id="dnd" class="nav-button">
+  	<a href="#drag-drop"><img src="../sysimages/content/drag_0.png" onMouseOver="this.src='sysimages/content/drag_2.png'" onMouseOut="this.src='sysimages/content/drag_0.png'" width="95" height="81" alt="drag and drop"/></a>
+  </div>
+  
+  <div id="kc" class="nav-button">
+  	<a href="#knowledge-check"><img src="../sysimages/content/knowledge_0.png" onMouseOver="this.src='sysimages/content/knowledge_2.png'" onMouseOut="this.src='sysimages/content/knowledge_0.png'" width="95" height="81" alt="knowledge check"/></a>
+  </div>
+  
+  <div id="pop" class="nav-button">
+  	<a href="#pop-up"><img src="../sysimages/content/pop_up_0.png" onMouseOver="this.src='sysimages/content/pop_up_2.png'" onMouseOut="this.src='sysimages/content/pop_up_0.png'" width="95" height="81" alt="pop ups"/></a>
+  </div>
+  
+  <div id="ddm" class="nav-button">
+  	<a href="#dropdown-menu"><img src="../sysimages/content/dropDown_0.png" onMouseOver="this.src='sysimages/content/dropDown_2.png'" onMouseOut="this.src='sysimages/content/dropDown_0.png'" width="95" height="81" alt="dropdown menu"/></a>
+  </div>
+  
+  <div id="slider" class="nav-button">
+  	<a href="#content-slider"><img src="../sysimages/content/slider_0.png" onMouseOver="this.src='sysimages/content/slider_2.png'" onMouseOut="this.src='sysimages/content/slider_0.png'" width="95" height="81" alt="content slider"/></a>
+  </div>
+  
+  <div id="graf" class="nav-button">
+  	<a href="#selectable-graphic"><img src="../sysimages/content/selectable_0.png" onMouseOver="this.src='sysimages/content/selectable_2.png'" onMouseOut="this.src='sysimages/content/selectable_0.png'" width="95" height="81" alt="selectable graphics"/></a>
+  </div>
+  
+  <div id="av" class="nav-button">
+  	<a href="#audio-video"><img src="../sysimages/content/AV_0.png" onMouseOver="this.src='sysimages/content/AV_2.png'" onMouseOut="this.src='sysimages/content/AV_0.png'" width="95" height="81" alt="audio/video"/></a>
+  </div>
+</nav>
+  
+<!-- TemplateEndEditable -->
+</div><!-- End of top-container -->
+
+<div id="main">
+<!-- TemplateBeginEditable name="MainContent" -->
+
+<!-- TemplateEndEditable -->
+</div><!-- End of main -->
+
+</div><!-- End of wraper-inner -->
+
+<div id="footer-wrapper">
+<footer>
+<div id="tw"><a href="https://twitter.com/c2ti" target="_blank"><img src="../sysimages/footer/twit_0.jpg" onMouseOver="this.src='sysimages/footer/twit_2.jpg'" onMouseOut="this.src='sysimages/footer/twit_0.jpg'" width="30" height="35" alt="twitter"/></a></div>
+
+<div id="fb"><a href="https://www.facebook.com/pages/C%C2%B2-Technologies-Inc/98452579888?ref=ts" target="_blank"><img src="../sysimages/footer/face_0.jpg" onMouseOver="this.src='sysimages/footer/face_2.jpg'" onMouseOut="this.src='sysimages/footer/face_0.jpg'" width="30" height="37" alt="facebook"/></a></div>
+
+<div id="lnkn"><a href="https://www.linkedin.com/company/c2-technologies" target="_blank"><img src="../sysimages/footer/linkedIn_0.jpg" onMouseOver="this.src='sysimages/footer/linkedIn_2.jpg'" onMouseOut="this.src='sysimages/footer/linkedIn_0.jpg'" width="30" height="37" alt="linkedin"/></a></div>
+
+
+</footer>
+</div>
+
+</body>
+</html>

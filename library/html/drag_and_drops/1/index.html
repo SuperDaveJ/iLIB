@@ -1,0 +1,85 @@
+<!DOCTYPE html >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script language="javascript" type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/faa_edr_content_c3.js"></script>
+<script type="text/javascript" src="js/wz_dragdrop.js"></script>
+<script type="text/javascript" src="js/DD_NtoMmatch.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+<div class="content_container">
+      <div class="bg_box">
+      <div class="header">
+  <h3 class="content_title">Knowledge Check Question</h3>
+      </div>
+<div id="inner_bg">
+  <div id="question">Build an ordered list of the process steps for determining product level compliance using comparative techniques by dragging the correct steps from the Step List on the left to the Ordered List on the right.  When you are finished, select Submit.</div>
+  
+  <div id="qHolder" style="position: relative; left: 0px; top: 21px; width: 885px; height: 290px;">
+    <img src="assets/30070_background.png" alt="question background" />
+    <div id="targetHolder" style="position: absolute; left: 464px; top: 21px; width: 445px; height: 189px;">
+      <!--=========== Target layers ===========-->
+      <div id="target1" style="position: absolute; top: 65px; left: 41px; height: 57px; width: 402px;"></div>
+      <div id="target2" style="position: absolute; top: 128px; left: 41px; height: 53px; width: 402px;"></div>
+      <div id="target3" style="position: absolute; top: 3px; left: 41px; height: 56px; width: 402px;"></div>
+  </div>
+    
+    <!--=========== Drag items layers ===========-->
+    <div id="dragHolder" style="position: absolute; top: 23px; left: 0px; height: 252px; width: 405px;">
+      
+      <!--=========== drag layers ===========-->
+      <div id="drag1" style="position: absolute; left: 2px; top: 0px; width: 402px; height: 43px; z-index: 3;"><img name="img1" id="img1" src="assets/30070a.png" width="402" height="43" border="0" alt="Compare the capabilities & account for the engine environment up to the certificated operating limits (how)" /></div>
+      
+      <div id="drag2" style="position: absolute; left: 2px; top: 48px; width: 402px; height: 57px; z-index: 3;"><img name="img2" id="img2" src="assets/30070b.png" width="402" height="57" border="0" alt="Demonstrate functional equivalence in the replacement part, accounting for differences, to show compliance with 14 CFR §21.303 (why)" /></div>
+      
+      <div id="drag4" style="position: absolute; left: 2px; top: 109px; width: 402px; height: 43px; z-index: 3;"><img src="assets/30070c.png" alt="Analyze the expected engine performance and compare with established product level outcomes (how)" name="img4" width="402" height="43" border="0" id="img4" /></div>
+      
+      <div id="drag3" style="position: absolute; left: 2px; top: 158px; width: 402px; height: 43px; z-index: 3;"><img src="assets/30070d.png" alt="Determine which functional capabilities are important to product level compliance (what)" name="img3" width="402" height="43" border="0" id="img3" /></div>
+      
+      <div id="drag5" style="position: absolute; left: 2px; top: 206px; width: 402px; height: 43px; z-index: 3;"><img src="assets/30070e.png" alt="Assess ability of replacement part to function at or above expected parameters. (why)" name="img5" width="402" height="43" border="0" id="img5" /></div>
+      
+      </div> <!-- End of dragHolder -->
+    </div> 
+  <!-- End of qHolder -->
+  </div>
+  </div>
+  
+  <div id="submit" style="position: absolute; top: 365px; left: 614px; width: 197px; height: 42px; z-index: 99;"><a href="javascript:judgeInteraction();" title="submit"><img src="assets/submit.png" width="197" height="42" border="0" alt="Submit" /></a></div>
+  </div>
+
+</div>
+</div>
+  
+<script type="text/javascript">
+<!--
+SET_DHTML("qHolder"+NO_DRAG,"targetHolder"+NO_DRAG,"dragHolder"+NO_DRAG,"img1"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+505+MAXOFFTOP+10+MAXOFFBOTTOM+155,"img2"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+505+MAXOFFTOP+45+MAXOFFBOTTOM+100,"img3"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+505+MAXOFFTOP+170+MAXOFFBOTTOM+5,"img4"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+505+MAXOFFTOP+120+MAXOFFBOTTOM+40,"img5"+CURSOR_HAND+MAXOFFLEFT+10+MAXOFFRIGHT+505+MAXOFFTOP+205+MAXOFFBOTTOM+2,"target1"+NO_DRAG,"target2"+NO_DRAG,"target3"+NO_DRAG,"target4"+NO_DRAG,"target5"+NO_DRAG);
+//NOTE: Set layers to draggable for this exercise does NOT work. 
+//All draggable layers must be held in another layer like dragHolder in this example.
+
+var nObj = 5;
+var nCorrect = 3;
+var intUserCorrect = 0;
+var triesUser = 0;
+var triesLimit = 2;
+
+//Draggable objects are always in sequential order: drag1, drag2, ...
+//Targets order list that will be matched.
+arrCorrect = new Array('target1','target2','target3','','');	//must have nObj items
+arrUser = new Array(nObj);
+for (var i=0; i<nObj; i++) arrUser[i] = ""
+
+var fdbkCorrect, fdbkIncorrect0, fdbkIncorrect1, fdbkIncorrect2;
+
+fdbkCorrect = "<p><strong>Correct!</strong></p> <p>You correctly determined the process steps for determining product level compliance using comparative techniques.</p> <p>Click on Next to continue.</p>";
+
+fdbkIncorrect0 = "<p>You have not made any selections. Please try again.</p>";
+
+fdbkIncorrect1 = "<p><strong>Incorrect.</strong></p><p>One or more of your answers is incorrect. Please try again.</p>";
+
+fdbkIncorrect2 = "<p><strong>Incorrect.</strong></p> <p>The correct answers are now displayed.</p> <p>Click on Next to continue.</p>";
+</script>  
+
+</body>
+</html>

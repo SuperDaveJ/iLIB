@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Fill in the Blank - Knowledge Check Questions</title>
+<script language="javascript" type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/content.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+<div class="content_container">
+      <div class="bg_box">
+      <div class="header">
+  <h3 class="content_title">Knowledge Check Question</h3>
+      </div>
+<div id="inner_bg">
+	<div id="question">
+	  <p><strong>Put the process steps in the correct order from 1 to 3. Select Submit when you are finished.</strong></p>
+		<div id="qf">
+			<form name="form1" action="">
+				<table width="600" border="0" cellspacing="0" cellpadding="5">
+					<tr align="left">
+						<td width="10"><input class="tf" type="text" name="Quiz" id="Quiz1" size="1" maxlength="1" title="Put the steps in the correct order. This step is: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enter 1, 2, or 3." /></td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+					<!-- paste the distractor between the label tags, don't edit anything else in the table -->
+					</tr>
+					<tr align="left">
+						<td><input class="tf" type="text" name="Quiz" id="Quiz2" size="1" maxlength="1" title="Put the steps in the correct order. This step is: Nulla rhoncus consequat velit vitae suscipit. Enter 1, 2, or 3." /></td>
+						<td>Nulla rhoncus consequat velit vitae suscipit.</td>
+					<!-- paste the distractor between the label tags, don't edit anything else in the table -->
+					</tr>
+					<tr align="left">
+						<td><input class="tf" type="text" name="Quiz" id="Quiz3" size="1" maxlength="1" title="Put the steps in the correct order. This step is: Integer dapibus congue metus a malesuada. Enter 1, 2, or 3." /></td>
+						<td>Integer dapibus congue metus a malesuada.</td>
+						<!-- paste the distractor between the label tags, don't edit anything else in the table -->
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+
+	<div class="submit">
+		<a href='javascript:judgeInteraction()'><img src="assets/submit.png" id="submit" border="0" title="Submit" alt="Submit"></a>
+	</div>
+ </div>
+ </div>
+ </div>               
+<script language="JavaScript" src="js/textOrder.js" type="text/javascript"></script>
+
+<script language="JavaScript" type="text/javascript">
+fdbkCorrect = "<p><strong>Correct!</strong></p> <p>The correct answers are 1, 2, and 3.</p>";
+fdbkWrong1 = "<p><strong>Incorrect.</strong></p> <p>One or more of your answers is incorrect.</p> <p>Please try again.</p>";
+fdbkWrong2 = "<p><strong>Incorrect.</strong></p> <p>The correct matches are now identified - which are 1, 2, and 3.</p>";
+
+var correctAnswer = "123" // enter the sequence the distractors should be in (i.e. "312" specifies that the second item comes first, then the third item...)
+</script>
+
+</div>
+</body>
+</html>

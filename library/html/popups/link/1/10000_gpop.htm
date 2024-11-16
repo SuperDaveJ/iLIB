@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Small Link Pop-up - Pop-ups</title>
+<link rel='stylesheet' type='text/css' href='css/popbox_small.css'>
+<script language="javascript" type="text/javascript" src="js/queryFunctions.js"></script>
+
+<script language="JavaScript">
+var iTerm = getQueryValue('popterm');
+var arrPopup = new Array();
+var nTerm = 3;
+for (var i = 0; i < nTerm; i++) {
+	arrPopup[i] = new Array(2);
+}
+
+arrPopup[0][0] = "Lorem ipsum";
+arrPopup[0][1] = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>";
+
+arrPopup[1][0] = "Lorem ipsum";
+arrPopup[1][1] = "<p align='center'><img src='assets/placeholder.png' title='Graphic of a pyramid diagram.' alt='Graphic of a pyramid diagram.'></p> <p>Vivamus feugiat urna facilisis, euismod sapien eu, maximus turpis. In enim mi, faucibus quis blandit sit amet, efficitur nec nisl. Ut risus dolor, pulvinar in neque eget, finibus porta risus. Aliquam erat volutpat. Proin quam tortor, elementum sed odio quis, aliquam pellentesque orci. Praesent vulputate, leo rhoncus facilisis consequat, lacus justo imperdiet sem, eget malesuada risus enim vel purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed id tempor nisi. Ut pellentesque augue dui, a sodales enim posuere id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse tellus justo, interdum in semper ac, tempor in mauris.</p>";
+
+arrPopup[2][0] = "Nunc laoreet";
+arrPopup[2][1] = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id ante lacus. Quisque sit amet tortor eget neque vehicula condimentum vel eu purus. Proin mauris erat, tincidunt eget pulvinar sit amet, hendrerit eget nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum bibendum metus, a iaculis augue gravida vitae. Maecenas dui quam, iaculis id consectetur sit amet, venenatis eu ipsum. Mauris semper pretium urna, ut finibus ipsum lobortis sit amet. Proin tempor est vitae dolor consectetur, non posuere dolor hendrerit. Aenean aliquet lacus eu sapien feugiat, nec luctus dui aliquet. Vestibulum hendrerit erat sem, in auctor tellus rutrum sit amet. Phasellus eu tincidunt ex.</p>";
+</script>
+
+</head>
+
+<body>
+<div id='popTitle'></div>
+<div id="popText"></div>
+
+ 
+<script language="javascript" type="text/javascript" > 
+	document.getElementById('popTitle').innerHTML = "<h1 class='title'>"+arrPopup[iTerm-1][0]+"</h1>";
+	document.getElementById('popText').innerHTML = arrPopup[iTerm-1][1];
+</script>
+<div id='close'><a href='javascript:self.close();' title='close'>X</a></div>
+</body>
+</html>

@@ -1,0 +1,788 @@
+<?xml version="1.0"?>
+<lectoratitle lectorafileversion="12">
+<titledata titletype="standard">
+<currentid>724</currentid>
+<currtheme></currtheme>
+<ribbonpasteoption>0</ribbonpasteoption>
+</titledata>
+<resourcedata>
+<resource id="43" resourcetype="image">
+<name>shape001.emf</name>
+<relativelink>images\shape001.emf</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="407" resourcetype="image">
+<name>action_img.png</name>
+<relativelink>images\action_img.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="462" resourcetype="image">
+<name>bg_gradient_light_linear.png</name>
+<relativelink>images\bg_gradient_light_linear.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="463" resourcetype="image">
+<name>playerBarFull.png</name>
+<relativelink>images\playerBarFull.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="464" resourcetype="image">
+<name>btn4_nav_back_over.png</name>
+<relativelink>images\btn4_nav_back_over.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="465" resourcetype="image">
+<name>btn4_nav_next_up.png</name>
+<relativelink>images\btn4_nav_next_up.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="466" resourcetype="image">
+<name>btn4_nav_next_over.png</name>
+<relativelink>images\btn4_nav_next_over.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="467" resourcetype="image">
+<name>btn4_nav_back_up.png</name>
+<relativelink>images\btn4_nav_back_up.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="468" resourcetype="image">
+<name>btn4_close_up.png</name>
+<relativelink>images\btn4_close_up.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="469" resourcetype="image">
+<name>btn4_close_over.png</name>
+<relativelink>images\btn4_close_over.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="470" resourcetype="image">
+<name>btn4_home_up.png</name>
+<relativelink>images\btn4_home_up.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="471" resourcetype="image">
+<name>btn4_home_over.png</name>
+<relativelink>images\btn4_home_over.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="472" resourcetype="image">
+<name>btn4_repeat_up.png</name>
+<relativelink>images\btn4_repeat_up.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="473" resourcetype="image">
+<name>btn4_repeat_over.png</name>
+<relativelink>images\btn4_repeat_over.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="474" resourcetype="image">
+<name>btn4_glossary_up.png</name>
+<relativelink>images\btn4_glossary_up.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="475" resourcetype="image">
+<name>btn4_glossary_over.png</name>
+<relativelink>images\btn4_glossary_over.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="476" resourcetype="image">
+<name>btn4_links_up.png</name>
+<relativelink>images\btn4_links_up.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="477" resourcetype="image">
+<name>btn4_links_over.png</name>
+<relativelink>images\btn4_links_over.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="478" resourcetype="image">
+<name>btn4_help_up.png</name>
+<relativelink>images\btn4_help_up.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="479" resourcetype="image">
+<name>btn4_help_over.png</name>
+<relativelink>images\btn4_help_over.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="480" resourcetype="image">
+<name>pb5.png</name>
+<relativelink>images\pb5.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+<resource id="481" resourcetype="image">
+<name>maskTop5.png</name>
+<relativelink>images\maskTop5.png</relativelink>
+<fileoffset>000000000000</fileoffset>
+<filelength>000000000000</filelength>
+<uncompressedlength>000000000000</uncompressedlength>
+<resourceflags>000000000000</resourceflags>
+</resource>
+</resourcedata>
+<variabledata>
+<variable id="374">
+<name>HideTitleLevelNext</name>
+<initialvalue>1</initialvalue>
+<lastupdated>1339193747</lastupdated>
+</variable>
+</variabledata>
+<objectdata>
+<title id="1" center="center">
+<name>Lectora Skin Gizmo 5</name>
+<lastupdated>1340466861</lastupdated>
+<bgcolor>62A5C0</bgcolor>
+<textcolor>000000</textcolor>
+<linkcolor>0000FF</linkcolor>
+<width>1024</width>
+<height>768</height>
+<font>
+<height>10</height>
+<facename>Arial</facename>
+</font>
+<image id="37" parent="1" resource="462" locked="true" proportional="true" useemptyalttag="true">
+<name>bg_gradient_light_linear</name>
+<lastupdated>1340466968</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>1024</cx>
+<cy>768</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+</image>
+<image id="44" parent="1" resource="43" useemptyalttag="true" proportional="false">
+<name>Rectangle</name>
+<lastupdated>1366736012</lastupdated>
+<possize>
+<point>
+<x>152</x>
+<y>102</y>
+</point>
+<size>
+<cx>720</cx>
+<cy>540</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<creatorshapeutildata>30000000f8800000ffffff0080000000000000000000000001000000020000003b0000002a0000009003000076020000</creatorshapeutildata>
+</image>
+<image id="48" parent="1" resource="463" proportional="true" useemptyalttag="true">
+<name>playerBarFull</name>
+<lastupdated>1366735805</lastupdated>
+<possize>
+<point>
+<x>138</x>
+<y>61</y>
+</point>
+<size>
+<cx>747</cx>
+<cy>673</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+</image>
+<text id="69" parent="1" locked="true" bordertype="flat" defaulttext="none">
+<name>Course Title</name>
+<lastupdated>1366736113</lastupdated>
+<possize>
+<point>
+<x>212</x>
+<y>69</y>
+</point>
+<size>
+<cx>600</cx>
+<cy>28</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<rtf>{\rtf1\ansi\deflang1033\ftnbj\uc1\deff1&#x0A;{\fonttbl{\f0 \froman \fcharset0 Times New Roman;}{\f1 \fswiss Arial;}}&#x0A;{\colortbl\red0\green0\blue0 ;\red255\green255\blue255 ;\red238\green238\blue238 ;\red0\green0\blue0 ;}&#x0A;{\stylesheet{\f1\fs20\cf3\cb1\ulc3 Normal;}{\cs1\cf3\cb1\ulc3 Default Paragraph Font;}}&#x0A;{\*\revtbl{Unknown;}}&#x0A;\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\headery720\footery720\deftab360\formshade\aendnotes\aftnnrlc\pgbrdrhead\pgbrdrfoot&#x0A;\sectd\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\headery720\footery720\sbkpage\pgncont\pgndec&#x0A;\plain\plain\f1\fs20\qc\cf2\fs32 Course Title Here\par}&#x0A;</rtf>
+<bordercolor>000000</bordercolor>
+<bordersize>0</bordersize>
+<marginsize>0</marginsize>
+<outlinecolor>000000</outlinecolor>
+</text>
+<progressbar id="387" parent="1" resource="480" orient="horizontal" showticks="false" drain="false" defaultbar="false" scope="title" type="toc">
+<name>Progress Bar 1</name>
+<lastupdated>1366736077</lastupdated>
+<possize>
+<point>
+<x>211</x>
+<y>650</y>
+</point>
+<size>
+<cx>204</cx>
+<cy>24</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<bgcolor>EEEEEE</bgcolor>
+<color>0000FF</color>
+<bordercolor>000000</bordercolor>
+<bordersize>1</bordersize>
+</progressbar>
+<image id="449" parent="1" resource="481" proportional="true" useemptyalttag="true">
+<name>maskTop5</name>
+<lastupdated>1366736077</lastupdated>
+<possize>
+<point>
+<x>208</x>
+<y>647</y>
+</point>
+<size>
+<cx>209</cx>
+<cy>27</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+</image>
+<button id="66" parent="1" resource="470" ontop="true" proportional="true" mouseoverimage="471">
+<name>Course Menu</name>
+<lastupdated>1366736209</lastupdated>
+<possize>
+<point>
+<x>685</x>
+<y>648</y>
+</point>
+<size>
+<cx>28</cx>
+<cy>28</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<action id="373" parent="66" on="mouseclick">
+<name>OnMClkModVar HideTitleLevelNext = 0</name>
+<lastupdated>1339183753</lastupdated>
+<actionitem actiontaken="modifyvariable" target="variable" targetvariable="374" modvariable="set">
+<targetstring>0</targetstring>
+<browserWnd />
+</actionitem>
+</action>
+<action id="417" parent="66" on="mouseclick">
+<name>OnMClkGoTo Course Menu</name>
+<lastupdated>1339183803</lastupdated>
+<actionitem actiontaken="goto" target="chapsectpage" targetobject="87">
+<browserWnd />
+</actionitem>
+<delay>0</delay>
+<delayms>100</delayms>
+</action>
+</button>
+<button id="76" parent="1" resource="472" ontop="true" proportional="true" mouseoverimage="473">
+<name>Replay</name>
+<lastupdated>1366736209</lastupdated>
+<possize>
+<point>
+<x>715</x>
+<y>648</y>
+</point>
+<size>
+<cx>28</cx>
+<cy>28</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<action parent="76" on="mouseclick">
+<name>OnMClkGoTo</name>
+<lastupdated>0</lastupdated>
+<actionitem actiontaken="goto" target="chapsectpage" targetobject="93">
+<browserWnd />
+</actionitem>
+</action>
+</button>
+<button id="63" parent="1" resource="474" ontop="true" proportional="true" mouseoverimage="475">
+<name>Course Glossary</name>
+<lastupdated>1366736209</lastupdated>
+<possize>
+<point>
+<x>745</x>
+<y>648</y>
+</point>
+<size>
+<cx>28</cx>
+<cy>28</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<action parent="63" on="mouseclick">
+<name>OnMClkGoTo</name>
+<lastupdated>0</lastupdated>
+<actionitem actiontaken="goto" target="chapsectpage" targetobject="88">
+<browserWnd />
+</actionitem>
+</action>
+</button>
+<button id="70" parent="1" resource="476" ontop="true" proportional="true" mouseoverimage="477">
+<name>Course Links</name>
+<lastupdated>1366736209</lastupdated>
+<possize>
+<point>
+<x>775</x>
+<y>648</y>
+</point>
+<size>
+<cx>28</cx>
+<cy>28</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<action parent="70" on="mouseclick">
+<name>OnMClkGoTo</name>
+<lastupdated>0</lastupdated>
+<actionitem actiontaken="goto" target="chapsectpage" targetobject="89">
+<browserWnd />
+</actionitem>
+</action>
+</button>
+<button id="73" parent="1" resource="478" ontop="true" proportional="true" mouseoverimage="479">
+<name>Help</name>
+<lastupdated>1366736209</lastupdated>
+<possize>
+<point>
+<x>805</x>
+<y>648</y>
+</point>
+<size>
+<cx>28</cx>
+<cy>28</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<action parent="73" on="mouseclick">
+<name>OnMClkGoTo</name>
+<lastupdated>0</lastupdated>
+<actionitem actiontaken="goto" target="chapsectpage" targetobject="90">
+<browserWnd />
+</actionitem>
+</action>
+</button>
+<button id="54" parent="1" resource="468" ontop="true" locked="true" proportional="true" mouseoverimage="469">
+<name>Close</name>
+<lastupdated>1366736183</lastupdated>
+<possize>
+<point>
+<x>844</x>
+<y>70</y>
+</point>
+<size>
+<cx>28</cx>
+<cy>28</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<action parent="54" on="mouseclick">
+<name>OnMClkExitClose</name>
+<lastupdated>0</lastupdated>
+<actionitem actiontaken="exit" target="nextpage">
+<browserWnd />
+</actionitem>
+</action>
+</button>
+<button id="57" parent="1" resource="467" ontop="true" locked="true" proportional="true" mouseoverimage="464">
+<name>Back</name>
+<lastupdated>1366736239</lastupdated>
+<possize>
+<point>
+<x>493</x>
+<y>652</y>
+</point>
+<size>
+<cx>42</cx>
+<cy>42</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<action parent="57" on="mouseclick">
+<name>OnMClkGoTo</name>
+<lastupdated>0</lastupdated>
+<actionitem actiontaken="goto" target="prevpage">
+<browserWnd />
+</actionitem>
+</action>
+</button>
+<button id="60" parent="1" resource="465" ontop="true" locked="true" proportional="true" mouseoverimage="466">
+<name>Next</name>
+<lastupdated>1366736239</lastupdated>
+<possize>
+<point>
+<x>546</x>
+<y>652</y>
+</point>
+<size>
+<cx>42</cx>
+<cy>42</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<action parent="60" on="mouseclick">
+<name>OnMClkGoTo</name>
+<lastupdated>0</lastupdated>
+<actionitem actiontaken="goto" target="nextpage">
+<browserWnd />
+</actionitem>
+</action>
+</button>
+<chapter id="83" parent="1">
+<name>Course Content</name>
+<lastupdated>1340466806</lastupdated>
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+</transitionin>
+<page id="2" parent="83" inherit="some">
+<name>First page</name>
+<lastupdated>1340466861</lastupdated>
+<excluded id="57" />
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+</transitionin>
+</page>
+<page id="87" parent="83" inherit="some">
+<name>Course Menu</name>
+<lastupdated>1340466806</lastupdated>
+<excluded id="57" />
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+</transitionin>
+<image id="405" parent="87" resource="407" locked="true" proportional="true" useemptyalttag="true">
+<name>action_img</name>
+<lastupdated>1339196073</lastupdated>
+<possize>
+<point>
+<x>0</x>
+<y>0</y>
+</point>
+<size>
+<cx>1</cx>
+<cy>1</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<action id="376" parent="405" on="show">
+<name>OnShowHide Title Level Back Button IF</name>
+<lastupdated>1339183836</lastupdated>
+<actionitem actiontaken="hide" target="object" targetobject="60">
+<conditionlist>
+<condition varcondition="374" comparecondition="equal">
+<stringcomparison>0</stringcomparison>
+</condition>
+</conditionlist>
+<browserWnd />
+</actionitem>
+<elseactionitem actiontaken="none">
+<browserWnd />
+</elseactionitem>
+</action>
+</image>
+<text id="438" parent="87" bordertype="flat" defaulttext="none">
+<name>Text Block 1</name>
+<lastupdated>1339195768</lastupdated>
+<possize>
+<point>
+<x>243</x>
+<y>162</y>
+</point>
+<size>
+<cx>538</cx>
+<cy>28</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<rtf>{\rtf1\ansi\deflang1033\ftnbj\uc1\deff1&#x0A;{\fonttbl{\f0 \froman \fcharset0 Times New Roman;}{\f1 \fswiss Arial;}}&#x0A;{\colortbl\red0\green0\blue0 ;\red255\green255\blue255 ;\red0\green0\blue0 ;}&#x0A;{\stylesheet{\f1\fs20\cf2\cb1\ulc2 Normal;}{\cs1\cf2\cb1\ulc2 Default Paragraph Font;}}&#x0A;{\*\revtbl{Unknown;}}&#x0A;\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\headery720\footery720\deftab360\formshade\aendnotes\aftnnrlc\pgbrdrhead\pgbrdrfoot&#x0A;\sectd\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\headery720\footery720\sbkpage\pgncont\pgndec&#x0A;\plain\plain\f1\fs20\qc\cf2\fs36 Place your Course \lang1033\hich\f1\loch\f1 Menu links\lang1033\hich\f1\loch\f1  on this page.\par}&#x0A;</rtf>
+<bordercolor>000000</bordercolor>
+<bordersize>0</bordersize>
+<marginsize>0</marginsize>
+<outlinecolor>000000</outlinecolor>
+</text>
+<button id="371" parent="87" resource="467" ontop="true" locked="true" proportional="true" mouseoverimage="464">
+<name>Back</name>
+<lastupdated>1340467741</lastupdated>
+<possize>
+<point>
+<x>465</x>
+<y>638</y>
+</point>
+<size>
+<cx>42</cx>
+<cy>42</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<action parent="371" on="mouseclick">
+<name>OnMClkGoTo</name>
+<lastupdated>0</lastupdated>
+<actionitem actiontaken="goto" target="back">
+<browserWnd />
+</actionitem>
+</action>
+</button>
+</page>
+<page id="81" parent="83" inherit="some">
+<name>Last Page</name>
+<lastupdated>1340466806</lastupdated>
+<excluded id="60" />
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+</transitionin>
+</page>
+</chapter>
+<chapter id="86" parent="1" inherit="some">
+<name>Non-Content Pages</name>
+<lastupdated>1340466806</lastupdated>
+<excluded id="57" />
+<excluded id="60" />
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+</transitionin>
+<button id="91" parent="86" resource="467" ontop="true" locked="true" proportional="true" mouseoverimage="464">
+<name>Back</name>
+<lastupdated>1340467694</lastupdated>
+<possize>
+<point>
+<x>465</x>
+<y>638</y>
+</point>
+<size>
+<cx>42</cx>
+<cy>42</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<action parent="91" on="mouseclick">
+<name>OnMClkGoTo</name>
+<lastupdated>0</lastupdated>
+<actionitem actiontaken="goto" target="back">
+<browserWnd />
+</actionitem>
+</action>
+</button>
+<page id="88" parent="86">
+<name>Course Glossary</name>
+<lastupdated>1340466806</lastupdated>
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+</transitionin>
+<text id="437" parent="88" bordertype="flat" defaulttext="none">
+<name>Text Block 1</name>
+<lastupdated>1339195735</lastupdated>
+<possize>
+<point>
+<x>243</x>
+<y>162</y>
+</point>
+<size>
+<cx>538</cx>
+<cy>28</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<rtf>{\rtf1\ansi\deflang1033\ftnbj\uc1\deff1&#x0A;{\fonttbl{\f0 \froman \fcharset0 Times New Roman;}{\f1 \fnil A;}{\f2 \fswiss Arial;}}&#x0A;{\colortbl\red0\green0\blue0 ;\red255\green255\blue255 ;\red0\green0\blue0 ;}&#x0A;{\stylesheet{\f2\fs20\cf0\cb1\ulc0 Normal;}{\cs1\cf0\cb1\ulc0 Default Paragraph Font;}}&#x0A;{\*\revtbl{Unknown;}}&#x0A;\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\headery720\footery720\deftab360\formshade\aendnotes\aftnnrlc\pgbrdrhead\pgbrdrfoot&#x0A;\sectd\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\headery720\footery720\sbkpage\pgncont\pgndec&#x0A;\plain\hich\f1\loch\f1\cf0\fs36\qc\hich\f2\loch\f2 Place your Course Glossary on this page.\par}&#x0A;</rtf>
+<bordercolor>000000</bordercolor>
+<bordersize>0</bordersize>
+<marginsize>0</marginsize>
+<outlinecolor>000000</outlinecolor>
+</text>
+</page>
+<page id="89" parent="86">
+<name>Course Links Library</name>
+<lastupdated>1340466806</lastupdated>
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+</transitionin>
+<text id="439" parent="89" bordertype="flat" defaulttext="none">
+<name>Text Block 1</name>
+<lastupdated>1339195790</lastupdated>
+<possize>
+<point>
+<x>243</x>
+<y>162</y>
+</point>
+<size>
+<cx>538</cx>
+<cy>28</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<rtf>{\rtf1\ansi\deflang1033\ftnbj\uc1\deff1&#x0A;{\fonttbl{\f0 \froman \fcharset0 Times New Roman;}{\f1 \fswiss Arial;}}&#x0A;{\colortbl\red0\green0\blue0 ;\red255\green255\blue255 ;\red0\green0\blue0 ;}&#x0A;{\stylesheet{\f1\fs20\cf2\cb1\ulc2 Normal;}{\cs1\cf2\cb1\ulc2 Default Paragraph Font;}}&#x0A;{\*\revtbl{Unknown;}}&#x0A;\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\headery720\footery720\deftab360\formshade\aendnotes\aftnnrlc\pgbrdrhead\pgbrdrfoot&#x0A;\sectd\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\headery720\footery720\sbkpage\pgncont\pgndec&#x0A;\plain\plain\f1\fs20\qc\cf2\fs36 Place your Course \lang1033\hich\f1\loch\f1 Librar\lang1033\hich\f1\loch\f1 y \lang1033\hich\f1\loch\f1 links \lang1033\hich\f1\loch\f1 on this page.\par}&#x0A;</rtf>
+<bordercolor>000000</bordercolor>
+<bordersize>0</bordersize>
+<marginsize>0</marginsize>
+<outlinecolor>000000</outlinecolor>
+</text>
+</page>
+<page id="90" parent="86">
+<name>Course Help</name>
+<lastupdated>1340466806</lastupdated>
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+</transitionin>
+<text id="442" parent="90" bordertype="flat" defaulttext="none">
+<name>Text Block 1</name>
+<lastupdated>1339195798</lastupdated>
+<possize>
+<point>
+<x>243</x>
+<y>162</y>
+</point>
+<size>
+<cx>538</cx>
+<cy>28</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<rtf>{\rtf1\ansi\deflang1033\ftnbj\uc1\deff1&#x0A;{\fonttbl{\f0 \froman \fcharset0 Times New Roman;}{\f1 \fswiss Arial;}}&#x0A;{\colortbl\red0\green0\blue0 ;\red255\green255\blue255 ;\red0\green0\blue0 ;}&#x0A;{\stylesheet{\f1\fs20\cf2\cb1\ulc2 Normal;}{\cs1\cf2\cb1\ulc2 Default Paragraph Font;}}&#x0A;{\*\revtbl{Unknown;}}&#x0A;\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\headery720\footery720\deftab360\formshade\aendnotes\aftnnrlc\pgbrdrhead\pgbrdrfoot&#x0A;\sectd\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\headery720\footery720\sbkpage\pgncont\pgndec&#x0A;\plain\plain\f1\fs20\qc\cf2\fs36 Place your Course \lang1033\hich\f1\loch\f1 Help content\lang1033\hich\f1\loch\f1  on this page.\par}&#x0A;</rtf>
+<bordercolor>000000</bordercolor>
+<bordersize>0</bordersize>
+<marginsize>0</marginsize>
+<outlinecolor>000000</outlinecolor>
+</text>
+</page>
+</chapter>
+<chapter id="92" parent="1">
+<name>Replay Page</name>
+<lastupdated>1340466806</lastupdated>
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+</transitionin>
+<page id="93" parent="92">
+<name>Replay</name>
+<lastupdated>1340466806</lastupdated>
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+</transitionin>
+<action id="94" parent="93" on="show">
+<name>OnShowGoTo History -1</name>
+<lastupdated>1338870656</lastupdated>
+<actionitem actiontaken="goto" target="back">
+<browserWnd />
+</actionitem>
+</action>
+</page>
+</chapter>
+<chapter id="230" parent="1">
+<name>Page Layouts</name>
+<lastupdated>1340466806</lastupdated>
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+</transitionin>
+<page id="434" parent="230" inherit="none">
+<name>Blank-no content/layout</name>
+<lastupdated>1340466806</lastupdated>
+<transitionin>
+<transtype>-1</transtype>
+<delay>0</delay>
+<speed>10</speed>
+</transitionin>
+<text id="443" parent="434" bordertype="flat" defaulttext="none">
+<name>Text Block 1</name>
+<lastupdated>1339195859</lastupdated>
+<possize>
+<point>
+<x>243</x>
+<y>162</y>
+</point>
+<size>
+<cx>538</cx>
+<cy>57</cy>
+</size>
+</possize>
+<cssclasses></cssclasses>
+<rtf>{\rtf1\ansi\deflang1033\ftnbj\uc1\deff1&#x0A;{\fonttbl{\f0 \froman \fcharset0 Times New Roman;}{\f1 \fswiss Arial;}}&#x0A;{\colortbl\red0\green0\blue0 ;\red255\green255\blue255 ;\red0\green0\blue0 ;}&#x0A;{\stylesheet{\f1\fs20\cf2\cb1\ulc2 Normal;}{\cs1\cf2\cb1\ulc2 Default Paragraph Font;}}&#x0A;{\*\revtbl{Unknown;}}&#x0A;\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\headery720\footery720\deftab360\formshade\aendnotes\aftnnrlc\pgbrdrhead\pgbrdrfoot&#x0A;\sectd\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\headery720\footery720\sbkpage\pgncont\pgndec&#x0A;\plain\plain\f1\fs20\qc\lang1033\hich\f1\loch\f1\cf2\fs36 T\lang1033\hich\f1\loch\f1 his page\lang1033\hich\f1\loch\f1  intentionally blank and may be deleted before publishing your course\lang1033\hich\f1\loch\f1 .\par}&#x0A;</rtf>
+<bordercolor>000000</bordercolor>
+<bordersize>0</bordersize>
+<marginsize>0</marginsize>
+<outlinecolor>000000</outlinecolor>
+</text>
+</page>
+</chapter>
+</title>
+</objectdata>
+</lectoratitle>

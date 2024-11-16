@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fade In Slides</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+
+var totalpic = 6;
+var count = 1;
+var timer;
+
+$("document").ready(function(e) {
+	$("#next").removeAttr("disabled");
+  });
+  
+  $(function(){
+	$("#next").click(
+	  function() {
+		  //$("#theDiv").animate({width: "500px"}, 1000); //1second
+		  count++;
+		  if (count < totalpic) {
+			 $("#prev").removeAttr("disabled");
+		  } else {
+			 $("#next").attr("disabled", "disabled");
+		  }
+			  
+		  oCurPhoto = $("#photoShow div.current");
+	  	  oNextPhoto = oCurPhoto.next();
+		  
+		  if (oNextPhoto.length != 0 ) rotateImages("f");
+		  		
+		if (timer) { clearInterval(timer) }
+   
+	  });
+	  
+	$("#prev").click(
+	  function() {
+		 // $("#theDiv").animate({fontSize: "24pt"}, 1000);
+		 count--;
+		 if (timer) { clearInterval(timer) }
+		// alert(count)
+		  if (count > 1) {
+			 $("#next").removeAttr("disabled");
+		  } else {
+			 $("#prev").attr("disabled", "disabled");
+		  }
+		 direction = "f"
+		  oCurPhoto = $("#photoShow div.current");
+	  	  oNextPhoto = oCurPhoto.prev();
+		  if (oNextPhoto.length != 0)rotateImages("b");
+	  });
+ 	
+	$("#auto").click(
+	  function() {
+		timer = setInterval("rotateImages('a')",2000);
+	  });
+	 
+  });
+  
+  var oCurPhoto;
+  var oNextPhoto;
+
+  
+  function rotateImages(d) {
+  var direction = d
+	  //$("#current").html("<p> count is "+count+"</p>");
+	 // count++;
+	  //var oCurPhoto = $("#photoShow div.current");
+	  //var oNextPhoto = oCurPhoto.next();
+
+	  if (direction=="a" ) {
+		oCurPhoto = $("#photoShow div.current");;
+		oNextPhoto = oCurPhoto.next();
+		
+		//alert(count);
+		if (oNextPhoto.length == 0) {
+			oNextPhoto = $("#photoShow div:first");
+			count = 0;
+		}
+		
+		count++;
+		$("#next").removeAttr("disabled")
+	  	$("#prev").removeAttr("disabled")
+	  
+	  if (count == totalpic)$("#next").attr("disabled", "disabled");
+		if (count == 1 ) $("#prev").attr("disabled", "disabled");
+
+		
+	  }
+	  
+	  
+	  oCurPhoto.removeClass('current').addClass('previous');
+	  oNextPhoto.css({opacity: 0.0}).addClass('current').animate({opacity:1.0}, 1000, function() {
+		  oCurPhoto.removeClass('previous')
+		  });
+  }
+  
+
+</script>
+
+</head>
+
+<body>
+<div class="content_container">
+    <div class="bg_box">
+        <div class="header">
+          <h3 class="content_title">Fade In Slides</h3>
+        </div>
+        <div id="inner_bg">
+            <div id="photoShow">
+              <div class = "current"><img src="images/31050a.png" alt="" /></div>
+              <div><img src="images/31050b.png" alt="" /></div>
+              <div><img src="images/31050c.png" alt="" /></div>
+              <div><img src="images/31050d.png" alt="" /></div>
+              <div><img src="images/31050e.png" alt="" /></div>
+              <div><img src="images/31050f.png" alt="" /></div>
+            </div>
+    
+        </div>
+        <div style="padding-left:33%; bottom:20px; padding-top:10px;">
+          <button id="prev" disabled="disabled">Back</button>
+          <button id="auto" >Auto Play</button>
+          <button id="next" disabled="disabled">Next</button>
+        </div>
+	</div>
+</div>
+</body>
+</html>

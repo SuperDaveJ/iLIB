@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MXL Driven KCs</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script language="javascript" type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/content.js"></script>
+<script language="javascript" type="text/javascript" src="js/MC.js"></script>
+</head>
+
+<body>
+<div class="content_container">
+    <div class="alignLeft">
+      <div class="bg_box">
+      <div class="header">
+  <h3 class="content_title">MXL Driven KCs</h3>
+      </div>
+<div id="inner_bg">
+<div id="pageN"></div>
+<div id="PageT"></div>
+
+	<div id="question"><p><strong>Which one of the following answer is C?  Select the correct answer, and then click Submit.</strong></p>
+		<script language="JavaScript" type="text/JavaScript">
+
+writenextq(parent.qOrder[parent.iq])
+</script>
+	</div>
+
+	
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" >
+var currentTime = new Date().getTime();
+var diffTime = parent.allowTime - parseInt((currentTime - parent.startTime)/1000);
+
+if (parent.allowTime != 0) CountBack(diffTime)
+</script>
+</body>
+</html>

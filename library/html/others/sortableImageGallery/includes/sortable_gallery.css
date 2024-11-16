@@ -1,0 +1,150 @@
+/*  CSS Document - lynda.com  */
+body {
+	margin: 0px;
+	padding: 20px 10px 20px 30px;
+	font: 14px Arial;
+	color: #bd8a1e;
+	background-color: #000;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+a, a:visited {
+	color: #00f;
+}
+
+img { border: none; }
+
+img.background {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+
+.title {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 70px;
+	height: 100%;
+	background: url(../images/title_large.png) no-repeat 0px 5px;
+}
+
+.gallery {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.sorting {
+	margin: 0 0 15px 0;
+	border: 1px solid #6d4d2e;
+	background-color: rgba(109,77,46,0.5);
+}
+.sorting span {
+	padding: 0 20px 0 0;
+	color: #6d4d2e;
+	font-style: italic;
+}
+.sorting div {
+	margin: 10px 0 10px 10px;
+}
+.sorting a {
+	color: #fff;
+	font-size: 0.85em;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 3px 20px;
+	background: url(../images/check_normal.gif) 0px 3px no-repeat;
+}
+.sorting a:hover {
+	color: #e5aa2c;
+}
+.sorting a.selected {
+	color: #e5aa2c;
+	background-image: url(../images/check_selected.gif);
+}
+
+.photos .thumbnail_container {
+	position: relative;
+}
+.photos .thumbnail_container a.thumbnail {
+	position: absolute;
+}
+.photos .thumbnail_container a.thumbnail img {
+	width: 75px;
+	height: 75px;
+	border: 1px solid #6d4d2e;
+}
+
+.clear_both { 
+	clear: both; 
+	line-height: 1px;
+}
+
+/***** media queries *****/
+/* vertical */
+@media screen and (min-height: 50px) and (max-height: 520px) {
+	.title {
+		background-image: url(../images/title_small.png);
+	}
+}
+
+@media screen and (min-height: 521px) and (max-height: 700px) {
+	.title {
+		background-image: url(../images/title_medium.png);
+	}
+}
+
+@media screen and (min-height: 701px) {
+	.title {
+		background-image: url(../images/title_large.png);
+	}
+}
+
+/* horizontal */
+@media screen and (min-width: 50px) and (max-width: 500px) {
+	.title {
+		background-image: url(../images/title_small.png);
+	}
+	body { padding: 5px 0 0 5px; }
+	.gallery {
+		width: auto;
+		margin-left: 35px;
+	}
+	.sorting span {
+		display: block;
+		color: #e5aa2c;
+		padding: 0 0 20px;
+	}
+	.sorting a {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 501px) and (max-width: 960px) {
+	.title {
+		background-image: url(../images/title_medium.png);
+	}
+	.sorting span {
+		display: block;
+		padding: 0 0 20px;
+	}
+	.sorting a {
+		display: block;
+		width: 35%;
+		margin-bottom: 5px;
+		float: left;
+	}
+}
+
+@media screen and (min-width: 961px) {
+	.title {
+		background-image: url(../images/title_large.png);
+	}
+	.sorting span {
+		padding: 0 20px 0 0;
+	}
+}

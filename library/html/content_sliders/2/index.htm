@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>SMART Web-Based Training Slides</title>
+	
+	<link rel="stylesheet" href="styles/slide.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="scripts/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			// Set starting slide to 1
+			var startSlide = 1;
+			// Get slide number if it exists
+			if (window.location.hash) {
+				startSlide = window.location.hash.replace('#','');
+			}
+			// Initialize Slides
+			$('#slides').slides({
+				
+				preload: true,
+				preloadImage: 'images/loading.gif',
+				generatePagination: true,
+				play: 0,
+				pause: 2500,
+				hoverPause: false,
+				// Get the starting slide
+				start: startSlide,
+				animationComplete: function(current){
+					// Set the slide number as a hash
+					window.location.hash = '#' + current;
+				}
+			});
+		});
+		
+	</script>
+</head>
+<body>
+	<div id="container">
+
+		  <div id="slides">
+          <div class="header">
+  <h3 class="content_title">Amination Slides</h3>
+      </div>
+				<div class="slides_container">
+					<div class="slide" ><p><img src="images/SM03040a.jpg" width="896" height="396" title="Image of Assessment Overview screen with Statistics Summary and Power User View links highlighted." alt="Image of Assessment Overview screen with Statistics Summary and Power User View links highlighted."></p>
+<p>There are two areas: the <strong>Statistics Summary</strong> and the <strong>Power User View (by Task)</strong>.</p>
+</div>
+<div class="slide" >
+	<p><img src="images/SM03040b.jpg" width="896" height="261" title="Image of Validate/Review POA&Ms screen with Select a Security Control highlighted." alt="Image of Validate/Review POA&Ms screen with Select a Security Control highlighted."></p>
+    <p>Selecting the Power User View will let you choose a security control by the drop down.</p>
+</div>
+<div class="slide">
+	<p><img src="images/SM03040c.jpg" width="683" height="261" title="Image of POA&M row with Upload/Identify link highlihgted." alt="Image of POA&M row with Upload/Identify link highlihgted."></p>
+    <p>To update the status of the selected control, first upload supporting documentation (unless it has already been uploaded).  Start by selecting the Upload/Identify link.</p>
+</div>
+
+<div class="slide" >
+	<p><img src="images/SM03040d.jpg" width="896" height="396" title="Image of document upload popup with uploaded documents table highlighted and Upload a file to Smart radio button highlighted." alt="Image of document upload popup with uploaded documents table highlighted and Upload a file to Smart radio button highlighted."></p>
+    <p>If a document supporting the findings for the control in question has already been uploaded to SMART, select it from the window below, then select <strong>Submit</strong>. If it had not been uploaded, select the <strong>Upload File</strong> to <strong>SMART</strong> button, select <strong>Browse</strong>, then select a file.  Select <strong>Submit</strong>.</p>
+</div>					
+<div class="slide" >
+ <p><img src="images/SM03040e.jpg" width="896" height="261" title="Image of POA&M row with Documents… link under Status/Doc column highlighted." alt="Image of POA&M row with Documents… link under Status/Doc column highlighted."></p>
+ <p>Once the mandatory supporting document has been uploaded, the link will show.</p>
+ </div>
+<div class="slide" >
+	<p><img src="images/SM03040f.jpg" width="896" height="261" title="Image of POA&M row with Add… link under Assigned/POC column highlighted." alt="Image of POA&M row with Add… link under Assigned/POC column highlighted."></p>
+    <p>Add a POC for this task</p>
+</div>
+<div class="slide" >
+	<p><img src="images/SM03040g.jpg" width="896" height="396" title="Image of POA&M screen with Status radio buttons, Save button, and Apply this to Other Systems link highlighted." alt="Image of POA&M screen with Status radio buttons, Save button, and Apply this to Other Systems link highlighted."></p>
+    <p>The status of the control can now be changed. Choose whether these changes should be applied to any/all of the other systems under your purview, using the <strong>Apply this to other systems</strong> link (see next step). If you are not applying the changes made to other systems, select <strong>Save</strong>. Repeat the previous steps for each assessment control task.</p>
+</div>	
+<div  class="slide" >
+	<p><img src="images/SM03040h.jpg" width="896" height="396" title="Image of Apply to other systems popup with system checkboxes highlighted." alt="Image of Apply to other systems popup with system checkboxes highlighted."></p>
+    <p>If you are applying the changes made (test plan link, POC and Status) to other systems select the <strong>Apply this to other systems</strong> link.  Select the radio boxes for all applicable systems under AOR then select <strong>Apply</strong>.  Finally, select <strong>Save</strong> at upper right.</p>
+</div>	
+				
+</div> <!--end of "slides_container"-->
+		    <div id="inactprev"><img src="images/arrow-prev_ina.png" width="24" height="43" alt="Arrow previous" title="Arrow previous"></div>				
+            <div id="inactnext"><img  src="images/arrow-next_ina.png" width="24" height="43" alt="Arrow next"  title="Arrow next"></div>
+            <a href="#" class="prev"><img src="images/arrow-prev.png" width="24" height="43" alt="Arrow previous" title="Arrow previous"></a>
+
+				<a href="#" class="next" ><img src="images/arrow-next.png" width="24" height="43" alt="Arrow next"  title="Arrow next"></a>
+
+			</div> <!--end of "slides"-->
+
+	</div>  <!--end of "container"-->
+</body>
+</html>

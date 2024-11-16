@@ -1,0 +1,47 @@
+<steps>
+	<instructions><![CDATA[Complete the necessary steps to log into FDNS-DS.  Remember to press the Tab key or Enter key after typing information into an interaction field to submit your answer.
+
+FDNS-DS Website:  FDNS Data System (FDNS-DS) hyperlink 
+User ID:  Userhq2020 (not case sensitive)
+Password:  Password1 (case sensitive)
+ ]]></instructions>
+	
+	<correct><![CDATA[You have now completed all the steps for this process.<br>Click on the "X" in the bottom right corner to close this window. Then click on NEXT to continue. ]]></correct>
+	<incorrect2>Incorrect.  The correct step is now displayed.  Select Continue to move to the next step.</incorrect2>
+	
+	<number-incorrect-items>7</number-incorrect-items>
+	<incorrect1-1>Incorrect. Double check the hyperlink information by clicking on the Information button in the bottom right corner of the screen. Try again.</incorrect1-1>
+	<incorrect1-2>Incorrect. Try to remember what to select to proceed to the Siebel login screen. Try again.</incorrect1-2>
+	<incorrect1-3>Incorrect. Try to remember what field to select to begin entering login information. Try again.</incorrect1-3>
+	<incorrect1-4>Incorrect. Remember, enter an FDNS-DS User ID. Double check the User ID by clicking on the Information button in the bottom right corner. Try again.</incorrect1-4>
+	<incorrect1-5>Incorrect. Try to remember what field to select to finish entering login information. Try again.</incorrect1-5>
+	<incorrect1-6>Incorrect. Remember, enter an FDNS-DS Password. Double check the Password by clicking on the Information button in the bottom right corner. Try again.</incorrect1-6>
+	<incorrect1-7>Incorrect. Try to remember what to select to complete the FDNS-DS login process. Try again.</incorrect1-7>
+	
+	<number-text-input-fields>2</number-text-input-fields>
+	<textInput1>USERHQ2020</textInput1>
+	<textInput2>Password1</textInput2>
+	
+</steps>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
